@@ -23,7 +23,7 @@ function App() {
           count is {count}
         </button> */}
         <Button
-          variant="outline"
+          variant="secondary"
           onClick={() => setCount((count) => count + 1)}
         >
           Count is {count}
