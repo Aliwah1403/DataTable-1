@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import DataTable from "./data-table";
+import { people } from "../people";
+import { columns } from "./columns";
 
 const People = () => {
-  return (
-    <div>People</div>
-  )
-}
+  return <DataTable columns={columns} data={people} />;
+};
 
-export default People
+export default People;

@@ -1,28 +1,26 @@
-import { ColumnDef } from "@tanstack/react-table";
-
 export const columns = [
   {
+    accessorKey: "id",
     header: "Person ID",
-    accessoryKey: "id",
   },
   {
+    accessorKey: "first_name",
     header: "First Name",
-    accessoryKey: "first_name",
   },
   {
+    accessorKey: "last_name",
     header: "Last Name",
-    accessoryKey: "last_name",
   },
   {
+    accessorKey: "email",
     header: "Email",
-    accessoryKey: "email",
   },
   {
+    accessorKey: "gender",
     header: "Gender",
-    accessoryKey: "gender",
   },
   {
+    accessorKey: "date_of_birth",
     header: "Date of Birth",
-    accessoryKey: "date_pf_birth",
   },
 ];
