@@ -1,26 +1,30 @@
 export const columns = [
   {
     accessorKey: "id",
-    header: "Person ID",
+    header: () => <div className="text-center">Person ID</div>,
   },
   {
     accessorKey: "first_name",
-    header: "First Name",
+    header: () => <div className="text-center">First Name</div>,
   },
   {
     accessorKey: "last_name",
-    header: "Last Name",
+    header: () => <div className="text-center">Last Name</div>,
   },
   {
     accessorKey: "email",
-    header: "Email",
+    header: () => <div className="text-center">Email</div>,
   },
   {
     accessorKey: "gender",
-    header: "Gender",
+    header: () => <div className="text-center">Gender</div>,
   },
   {
     accessorKey: "date_of_birth",
-    header: "Date of Birth",
+    header: () => <div className="text-center">Date of Birth</div>,
+    cell: ({ row }) => {
+      const date_of_birth = row.getValue("date_of_birth");
+      return <div className="font-medium">{date_of_birth}</div>;
+    },
   },
 ];
