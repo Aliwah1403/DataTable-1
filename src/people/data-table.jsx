@@ -33,6 +33,7 @@ export function DataTable({ columns, data }) {
   const [sorting, setSorting] = useState([]);
   const [columnFilters, setColumnFilters] = useState([]);
   const [columnVisibility, setColumnVisibility] = useState([]);
+  const [rowSelection, setRowSelection] = useState([]);
   const table = useReactTable({
     data,
     columns,
@@ -44,11 +45,13 @@ export function DataTable({ columns, data }) {
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
     onColumnVisibilityChange: setColumnVisibility,
+    onRowSelectionChange: setRowSelection,
 
     state: {
       sorting,
       columnFilters,
       columnVisibility,
+      rowSelection,
     },
   });
 
@@ -149,29 +152,37 @@ export function DataTable({ columns, data }) {
         </Table>
       </div>
 
-      {/* Pagination section */}
-      <div className="flex items-center justify-end space-x-2 py-4">
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => {
-            table.previousPage();
-          }}
-          disabled={!table.getCanPreviousPage()}
-          // checks if the table has a previous page. If not it disables the button
-        >
-          Previous
-        </Button>
-        <Button
-          size="sm"
-          onClick={() => {
-            table.nextPage();
-          }}
-          disabled={!table.getCanNextPage()}
-          // checks if the table has a previous page. If not it disables the button
-        >
-          Next
-        </Button>
+      <div className="flex items-center justify-between space-x-2 py-4">
+        {/* Selected rows section */}
+        <div className=" text-sm text-muted-foreground">
+          {table.getFilteredSelectedRowModel().rows.length} of{" "}
+          {table.getFilteredRowModel().rows.length} row(s) selected.
+        </div>
+
+        {/* Pagination section */}
+        <div className=" space-x-2 ">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => {
+              table.previousPage();
+            }}
+            disabled={!table.getCanPreviousPage()}
+            // checks if the table has a previous page. If not it disables the button
+          >
+            Previous
+          </Button>
+          <Button
+            size="sm"
+            onClick={() => {
+              table.nextPage();
+            }}
+            disabled={!table.getCanNextPage()}
+            // checks if the table has a previous page. If not it disables the button
+          >
+            Next
+          </Button>
+        </div>
       </div>
     </div>
   );
