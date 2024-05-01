@@ -1,72 +1,7 @@
-// import {
-//   flexRender,
-//   getCoreRowModel,
-//   useReactTable,
-// } from "@tanstack/react-table";
-
-// import {
-//   Table,
-//   TableBody,
-//   TableCell,
-//   TableHead,
-//   TableHeader,
-//   TableRow,
-// } from "@/components/ui/table";
-
-// export function PeopleDataTable({ columns, data }) {
-
-//   const table = useReactTable({
-//     data,
-//     columns,
-//     getCoreRowModel: getCoreRowModel(),
-//   });
-
-//   return (
-//     <div className="rounded-md border">
-//       <Table>
-//         <TableHeader>
-//           {table.getHeaderGroups().map((headerGroup) => (
-//             <TableRow key={headerGroup.id}>
-//               {headerGroup.headers.map((header) => {
-//                 return (
-//                   <TableHead key={header.id}>
-//                     {header.isPlaceholder
-//                       ? null
-//                       : flexRender(
-//                           header.column.columnDef.header,
-//                           header.getContext()
-//                         )}
-//                   </TableHead>
-//                 );
-//               })}
-//             </TableRow>
-//           ))}
-//         </TableHeader>
-//         <TableBody>
-//           {table.getRowModel().rows.map((row) => (
-//             <TableRow
-//               key={row.id}
-//               data-state={row.getIsSelected() && "selected"}
-//             >
-//               {row.getVisibleCells().map((cell) => (
-//                 <TableCell key={cell.id}>
-//                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
-//                 </TableCell>
-//               ))}
-//             </TableRow>
-//           ))}
-//         </TableBody>
-//       </Table>
-//     </div>
-//   );
-// }
-
-// export default PeopleDataTable;
-
-"use client";
 import {
   flexRender,
   getCoreRowModel,
+  getFilteredRowModel,
   getPaginationRowModel,
   getSortedRowModel,
   useReactTable,
@@ -80,27 +15,47 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+
 import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+
 import { useState } from "react";
 
 export function DataTable({ columns, data }) {
   const [sorting, setSorting] = useState([]);
+  const [columnFilters, setColumnFilters] = useState([]);
   const table = useReactTable({
     data,
     columns,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
     getSortedRowModel: getSortedRowModel(),
+    getFilteredRowModel: getFilteredRowModel(),
 
     onSortingChange: setSorting,
+    onColumnFiltersChange: setColumnFilters,
+
     state: {
       sorting,
+      columnFilters,
     },
   });
 
   return (
     <div>
       {/* Table Section */}
+
+      {/* Filter input field */}
+      <div className="flex items-center py-4">
+        <Input
+          placeholder="Filter by First Name..."
+          className="max-w-sm"
+          value={table.getColumn("first_name")?.getFilterValue() ?? ""}
+          onChange={(e) => {
+            table.getColumn("first_name")?.setFilterValue(e.target.value);
+          }}
+        />
+      </div>
       <div className="rounded-md border">
         <Table>
           <TableHeader>
