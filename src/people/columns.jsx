@@ -34,11 +34,11 @@ export const columns = [
     enableHiding: false,
   },
   {
-    accessorKey: "id",
-    header: () => <div className="text-center">Person ID</div>,
+    accessorKey: "registration",
+    header: () => <div className="text-center">Registration</div>,
   },
   {
-    accessorKey: "first_name",
+    accessorKey: "driver",
     header: ({ column }) => {
       return (
         <Button
@@ -48,37 +48,53 @@ export const columns = [
             column.toggleSorting(column.getIsSorted() === "asc");
           }}
         >
-          First Name
+          Driver
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       );
     },
   },
   {
-    accessorKey: "last_name",
-    header: () => <div className="text-center">Last Name</div>,
+    accessorKey: "destination",
+    header: () => <div className="text-center">Destination</div>,
   },
   {
-    accessorKey: "email",
-    header: () => <div className="text-center">Email</div>,
+    accessorKey: "rate",
+    header: () => <div className="text-center">Rate</div>,
   },
   {
-    accessorKey: "gender",
-    header: () => <div className="text-center">Gender</div>,
+    accessorKey: "fuel",
+    header: () => <div className="text-center">Fuel</div>,
   },
   {
-    accessorKey: "date_of_birth",
-    header: () => <div className="text-center">Date of Birth</div>,
-    cell: ({ row }) => {
-      const date_of_birth = row.getValue("date_of_birth");
-      return <div className="font-medium">{date_of_birth}</div>;
-    },
+    accessorKey: "clerkFee",
+    header: () => <div className="text-center">Clerk Fee</div>,
   },
+  {
+    accessorKey: "milageFee",
+    header: () => <div className="text-center">Milage Fee</div>,
+  },
+  {
+    accessorKey: "repairCost",
+    header: () => <div className="text-center">Repair Cost</div>,
+  },
+  {
+    accessorKey: "extraCost",
+    header: () => <div className="text-center">Extra Cost</div>,
+  },
+  // {
+  //   accessorKey: "date_of_birth",
+  //   header: () => <div className="text-center">Date of Birth</div>,
+  //   cell: ({ row }) => {
+  //     const date_of_birth = row.getValue("date_of_birth");
+  //     return <div className="font-medium">{date_of_birth}</div>;
+  //   },
+  // },
   {
     id: "actions",
     cell: ({ row }) => {
-      const person = row.original;
-      const personId = person.id;
+      const expenditure = row.original;
+      const registrationId = expenditure.registration;
       return (
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -90,10 +106,10 @@ export const columns = [
             <DropdownMenuLabel>Actions</DropdownMenuLabel>
             <DropdownMenuItem
               onClick={() => {
-                navigator.clipboard.writeText(person.first_name.toString());
+                navigator.clipboard.writeText(expenditure.registration.toString());
               }}
             >
-              Copy person's name
+              Copy vehicle registration
             </DropdownMenuItem>
             <DropdownMenuItem className="text-red-400">
               Delete row

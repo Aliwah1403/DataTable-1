@@ -4,8 +4,9 @@ import { people } from "../people";
 import { columns } from "./columns";
 import { Button } from "../components/ui/button";
 import { Plus } from "lucide-react";
+import { expenditure } from "../expenditure";
 
-const People = () => {
+const Expenditure = () => {
   return (
     <>
       <div className="flex items-center justify-between mb-10">
@@ -22,9 +23,9 @@ const People = () => {
           Add Data
         </Button>
       </div>
-      <DataTable columns={columns} data={people} />
+      <DataTable columns={columns} data={expenditure} />
     </>
   );
 };
 
-export default People;
+export default Expenditure;

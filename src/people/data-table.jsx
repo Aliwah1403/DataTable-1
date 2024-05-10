@@ -71,11 +71,11 @@ export function DataTable({ columns, data }) {
           {/* Filter input field */}
           <div className="flex items-center py-4">
             <Input
-              placeholder="Filter by First Name..."
+              placeholder="Filter by Registration..."
               className="max-w-sm"
-              value={table.getColumn("first_name")?.getFilterValue() ?? ""}
+              value={table.getColumn("registration")?.getFilterValue() ?? ""}
               onChange={(e) => {
-                table.getColumn("first_name")?.setFilterValue(e.target.value);
+                table.getColumn("registration")?.setFilterValue(e.target.value);
               }}
             />
 
