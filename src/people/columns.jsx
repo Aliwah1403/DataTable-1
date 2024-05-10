@@ -9,6 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Checkbox } from "../components/ui/checkbox";
+import DataTableColumnHeader from "../components/datatableheader";
 
 export const columns = [
   {
@@ -36,6 +37,10 @@ export const columns = [
   {
     accessorKey: "registration",
     header: () => <div className="text-center">Registration</div>,
+    cell: ({ row }) => {
+      const registration = row.getValue("registration");
+      return <div className="font-medium">{registration}</div>;
+    },
   },
   {
     accessorKey: "driver",
@@ -60,11 +65,15 @@ export const columns = [
   },
   {
     accessorKey: "rate",
-    header: () => <div className="text-center">Rate</div>,
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Rate" />
+    ),
   },
   {
     accessorKey: "fuel",
-    header: () => <div className="text-center">Fuel</div>,
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Fuel" />
+    ),
   },
   {
     accessorKey: "clerkFee",
@@ -106,7 +115,9 @@ export const columns = [
             <DropdownMenuLabel>Actions</DropdownMenuLabel>
             <DropdownMenuItem
               onClick={() => {
-                navigator.clipboard.writeText(expenditure.registration.toString());
+                navigator.clipboard.writeText(
+                  expenditure.registration.toString()
+                );
               }}
             >
               Copy vehicle registration
