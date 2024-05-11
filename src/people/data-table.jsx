@@ -37,6 +37,7 @@ import { Input } from "../components/ui/input";
 
 import { useState } from "react";
 import { Settings2 } from "lucide-react";
+import DataTableViewOptions from "../components/datatableoption";
 
 export function DataTable({ columns, data }) {
   const [sorting, setSorting] = useState([]);
@@ -80,35 +81,7 @@ export function DataTable({ columns, data }) {
             />
 
             {/* Column visibility dropdown */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="outline" className="ml-auto">
-                  <Settings2 size={15} className="mr-2" />
-                  View
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuLabel>Toggle Colums</DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                {table
-                  .getAllColumns()
-                  .filter((column) => column.getCanHide())
-                  .map((column) => {
-                    return (
-                      <DropdownMenuCheckboxItem
-                        key={column.id}
-                        className="capitalize"
-                        checked={column.getIsVisible()}
-                        onCheckedChange={(value) =>
-                          column.toggleVisibility(!!value)
-                        }
-                      >
-                        {column.id}
-                      </DropdownMenuCheckboxItem>
-                    );
-                  })}
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <DataTableViewOptions table={table} />
           </div>
         </CardHeader>
         <CardContent>
