@@ -38,6 +38,7 @@ import { Input } from "../components/ui/input";
 import { useState } from "react";
 import { Settings2 } from "lucide-react";
 import DataTableViewOptions from "../components/datatableoption";
+import DataTablePagination from "../components/datatablepagination";
 
 export function DataTable({ columns, data }) {
   const [sorting, setSorting] = useState([]);
@@ -67,7 +68,7 @@ export function DataTable({ columns, data }) {
 
   return (
     <div>
-      <Card className="p-5">
+      <Card>
         <CardHeader>
           {/* Filter input field */}
           <div className="flex items-center py-4">
@@ -136,40 +137,11 @@ export function DataTable({ columns, data }) {
               </TableBody>
             </Table>
           </div>
+          <div className="mt-3">
+            {" "}
+            <DataTablePagination table={table} />
+          </div>
         </CardContent>
-
-        <div className="flex items-center justify-between space-x-2 py-4 px-6">
-          {/* Selected rows section */}
-          <div className=" text-sm text-muted-foreground">
-            {table.getFilteredSelectedRowModel().rows.length} of{" "}
-            {table.getFilteredRowModel().rows.length} row(s) selected.
-          </div>
-
-          {/* Pagination section */}
-          <div className=" space-x-2 ">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => {
-                table.previousPage();
-              }}
-              disabled={!table.getCanPreviousPage()}
-              // checks if the table has a previous page. If not it disables the button
-            >
-              Previous
-            </Button>
-            <Button
-              size="sm"
-              onClick={() => {
-                table.nextPage();
-              }}
-              disabled={!table.getCanNextPage()}
-              // checks if the table has a previous page. If not it disables the button
-            >
-              Next
-            </Button>
-          </div>
-        </div>
       </Card>
     </div>
   );
