@@ -36,16 +36,31 @@ import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 
 import { useState } from "react";
+
 import { Settings2 } from "lucide-react";
+import { CalendarIcon } from "@radix-ui/react-icons";
+import { format } from "date-fns";
+
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "../components/ui/popover";
+import { Calendar } from "../components/ui/calendar";
+import { cn } from "../lib/utils";
+
 import DataTableViewOptions from "../components/datatableoption";
 import DataTablePagination from "../components/datatablepagination";
+
 import { exportToExcel } from "../lib/xlsx";
+import DateInputFilter from "../components/dateinputfilter";
 
 export function DataTable({ columns, data }) {
   const [sorting, setSorting] = useState([]);
   const [columnFilters, setColumnFilters] = useState([]);
   const [columnVisibility, setColumnVisibility] = useState([]);
   const [rowSelection, setRowSelection] = useState([]);
+  const [date, setDate] = useState();
   const table = useReactTable({
     data,
     columns,
@@ -71,16 +86,44 @@ export function DataTable({ columns, data }) {
     <div>
       <Card>
         <CardHeader>
-          {/* Filter input field */}
           <div className="flex justify-between items-center py-4">
-            <Input
-              placeholder="Filter by Registration..."
-              className="max-w-sm"
-              value={table.getColumn("registration")?.getFilterValue() ?? ""}
-              onChange={(e) => {
-                table.getColumn("registration")?.setFilterValue(e.target.value);
-              }}
-            />
+            <div className="flex flex-row gap-2">
+              {/* Filter input field */}
+              <Input
+                placeholder="Filter by Registration"
+                className="max-w-sm"
+                value={table.getColumn("registration")?.getFilterValue() ?? ""}
+                onChange={(e) => {
+                  table
+                    .getColumn("registration")
+                    ?.setFilterValue(e.target.value);
+                }}
+              />
+
+              {/* Date picker filter */}
+              <Popover>
+                <PopoverTrigger asChild>
+                  <Button
+                    variant="outline"
+                    className={cn(
+                      "w-[240px] justify-start text-left font-normal",
+                      !date && "text-muted-foreground"
+                    )}
+                  >
+                    <CalendarIcon className="mr-2 h-4 w-4" />
+                    {date ? format(date, "PPP") : <span>Filter by date</span>}
+                  </Button>
+                </PopoverTrigger>
+                <PopoverContent className="w-auto p-0" align="start">
+                  <Calendar
+                    mode="single"
+                    selected={date}
+                    onSelect={setDate}
+                    initialFocus
+                  />
+                </PopoverContent>
+              </Popover>
+            </div>
 
             <div className="flex flex-row gap-2">
               {/* export data button */}
