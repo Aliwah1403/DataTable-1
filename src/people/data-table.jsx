@@ -90,12 +90,12 @@ export function DataTable({ columns, data }) {
             <div className="flex flex-row gap-2">
               {/* Filter input field */}
               <Input
-                placeholder="Filter by Registration"
+                placeholder="Filter by Name"
                 className="max-w-sm"
-                value={table.getColumn("registration")?.getFilterValue() ?? ""}
+                value={table.getColumn("first_name")?.getFilterValue() ?? ""}
                 onChange={(e) => {
                   table
-                    .getColumn("registration")
+                    .getColumn("first_name")
                     ?.setFilterValue(e.target.value);
                 }}
               />

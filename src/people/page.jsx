@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/sheet";
 import { Plus } from "lucide-react";
 import { expenditure } from "../expenditure";
+import { peopleColums } from "./peopleColumn";
 
 const Expenditure = () => {
   return (
@@ -66,7 +67,7 @@ const Expenditure = () => {
           </SheetContent>
         </Sheet>
       </div>
-      <DataTable columns={columns} data={expenditure} />
+      <DataTable columns={peopleColums} data={people} />
     </>
   );
 };
