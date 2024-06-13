@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Checkbox } from "../components/ui/checkbox";
 import DataTableColumnHeader from "../components/datatableheader";
+import { includesStringFilterFn } from "../lib/utils";
 
 export const peopleColums = [
   {
@@ -51,6 +52,7 @@ export const peopleColums = [
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Gender" />
     ),
+    filterFn: includesStringFilterFn,
   },
   {
     id: "actions",

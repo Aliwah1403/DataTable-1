@@ -4,6 +4,8 @@ import {
   getFilteredRowModel,
   getPaginationRowModel,
   getSortedRowModel,
+  getFacetedRowModel,
+  getFacetedUniqueValues,
   useReactTable,
 } from "@tanstack/react-table";
 
@@ -38,7 +40,7 @@ import { Input } from "../components/ui/input";
 import { useState } from "react";
 
 import { Settings2 } from "lucide-react";
-import { CalendarIcon } from "@radix-ui/react-icons";
+import { CalendarIcon, Cross2Icon } from "@radix-ui/react-icons";
 import { format } from "date-fns";
 
 import {
@@ -47,13 +49,15 @@ import {
   PopoverTrigger,
 } from "../components/ui/popover";
 import { Calendar } from "../components/ui/calendar";
-import { cn } from "../lib/utils";
+import { cn, getDropDownValues } from "../lib/utils";
 
 import DataTableViewOptions from "../components/datatableoption";
 import DataTablePagination from "../components/datatablepagination";
+import DateInputFilter from "../components/dateinputfilter";
+// import DataTableFacetedFilter from "../components/faceted-filter";
 
 import { exportToExcel } from "../lib/xlsx";
-import DateInputFilter from "../components/dateinputfilter";
+import { DataTableFacetedFilter } from "../components/faceted-filter";
 
 export function DataTable({ columns, data }) {
   const [sorting, setSorting] = useState([]);
@@ -68,6 +72,8 @@ export function DataTable({ columns, data }) {
     getPaginationRowModel: getPaginationRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
+    getFacetedRowModel: getFacetedRowModel(),
+    getFacetedUniqueValues: getFacetedUniqueValues(),
 
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
@@ -82,6 +88,8 @@ export function DataTable({ columns, data }) {
     },
   });
 
+  const isFiltered = table.getState().columnFilters.length > 0;
+
   return (
     <div>
       <Card>
@@ -94,14 +102,32 @@ export function DataTable({ columns, data }) {
                 className="max-w-sm"
                 value={table.getColumn("first_name")?.getFilterValue() ?? ""}
                 onChange={(e) => {
-                  table
-                    .getColumn("first_name")
-                    ?.setFilterValue(e.target.value);
+                  table.getColumn("first_name")?.setFilterValue(e.target.value);
                 }}
               />
 
+              {table.getColumn("gender") && (
+                <DataTableFacetedFilter
+                  column={table.getColumn("gender")}
+                  title="Gender"
+                  options={getDropDownValues(data, "gender")}
+                />
+              )}
+
+              {isFiltered && (
+                <Button
+                  aria-label="Reset filters"
+                  variant="ghost"
+                  onClick={() => table.resetColumnFilters()}
+                  className="h-8 px-2 lg:px-3"
+                >
+                  Reset
+                  <Cross2Icon className="ml-2 size-4" aria-hidden="true" />
+                </Button>
+              )}
+
               {/* Date picker filter */}
-              <Popover>
+              {/* <Popover>
                 <PopoverTrigger asChild>
                   <Button
                     variant="outline"
@@ -122,7 +148,7 @@ export function DataTable({ columns, data }) {
                     initialFocus
                   />
                 </PopoverContent>
-              </Popover>
+              </Popover> */}
             </div>
 
             <div className="flex flex-row gap-2">
@@ -143,8 +169,8 @@ export function DataTable({ columns, data }) {
                   <path
                     d="M3.5 2C3.22386 2 3 2.22386 3 2.5V12.5C3 12.7761 3.22386 13 3.5 13H11.5C11.7761 13 12 12.7761 12 12.5V6H8.5C8.22386 6 8 5.77614 8 5.5V2H3.5ZM9 2.70711L11.2929 5H9V2.70711ZM2 2.5C2 1.67157 2.67157 1 3.5 1H8.5C8.63261 1 8.75979 1.05268 8.85355 1.14645L12.8536 5.14645C12.9473 5.24021 13 5.36739 13 5.5V12.5C13 13.3284 12.3284 14 11.5 14H3.5C2.67157 14 2 13.3284 2 12.5V2.5Z"
                     fill="currentColor"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
                 Export
