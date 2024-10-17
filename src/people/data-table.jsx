@@ -59,6 +59,7 @@ import DateInputFilter from "../components/dateinputfilter";
 import { exportToExcel } from "../lib/xlsx";
 import { DataTableFacetedFilter } from "../components/faceted-filter";
 import { ExportModal } from "@/components/dataexportmodal";
+import { peopleColums } from "./peopleColumn";
 
 export function DataTable({ columns, data }) {
   const [sorting, setSorting] = useState([]);
@@ -177,7 +178,7 @@ export function DataTable({ columns, data }) {
                 Export
               </Button> */}
 
-              <ExportModal />
+              <ExportModal columns={peopleColums} />
 
               {/* Column visibility dropdown */}
               <DataTableViewOptions table={table} />

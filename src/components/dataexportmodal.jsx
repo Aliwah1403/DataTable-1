@@ -25,21 +25,21 @@ import { cn } from "@/lib/utils";
 import { FileText, FileSpreadsheet, FileJson, Loader2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const columns = [
-  { id: "registration", label: "Registration" },
-  { id: "driver", label: "Driver" },
-  { id: "destination", label: "Destination" },
-  { id: "rate", label: "Rate" },
-  { id: "detentionFee", label: "Detention Fee" },
-  { id: "fuel", label: "Fuel" },
-  { id: "clerkFee", label: "Clerk Fee" },
-  { id: "milageFee", label: "Milage Fee" },
-  { id: "parking", label: "Parking" },
-  { id: "repairCost", label: "Repair Cost" },
-  { id: "extraCost", label: "Extra Cost" },
-];
+// const columns = [
+//   { id: "registration", label: "Registration" },
+//   { id: "driver", label: "Driver" },
+//   { id: "destination", label: "Destination" },
+//   { id: "rate", label: "Rate" },
+//   { id: "detentionFee", label: "Detention Fee" },
+//   { id: "fuel", label: "Fuel" },
+//   { id: "clerkFee", label: "Clerk Fee" },
+//   { id: "milageFee", label: "Milage Fee" },
+//   { id: "parking", label: "Parking" },
+//   { id: "repairCost", label: "Repair Cost" },
+//   { id: "extraCost", label: "Extra Cost" },
+// ];
 
-export function ExportModal() {
+export function ExportModal({ columns }) {
   const [exportType, setExportType] = useState(null);
   const [loadingType, setLoadingType] = useState(null);
   const [selectedColumns, setSelectedColumns] = useState(
@@ -77,6 +77,19 @@ export function ExportModal() {
 
   const handleGoBack = () => {
     setExportType(null);
+  };
+
+  const getColumnLabel = (column) => {
+    if (typeof column.header === "function") {
+      // Extract the title from the header function
+      const headerContent = column.header({ column });
+      if (React.isValidElement(headerContent) && headerContent.props.title) {
+        return headerContent.props.title;
+      }
+    }
+    return typeof column.header === "string"
+      ? column.header
+      : column.accessorKey;
   };
 
   return (
@@ -166,25 +179,31 @@ export function ExportModal() {
                 <Label className="text-left">Select Columns</Label>
                 <ScrollArea className="h-[200px] w-full rounded-md border p-4">
                   <div className="grid grid-cols-2 gap-4">
-                    {columns.map((column) => (
-                      <div
-                        key={column.id}
-                        className="flex items-center space-x-2"
-                      >
-                        <Checkbox
-                          id={column.id}
-                          checked={selectedColumns.includes(column.id)}
-                          onCheckedChange={() => handleColumnToggle(column.id)}
-                          className="border-green-950  data-[state=checked]:bg-green-950 data-[state=checked]:border-green-950"
-                        />
-                        <label
-                          htmlFor={column.id}
-                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    {columns
+                      .filter((col) => col.accessorKey)
+                      .map((column) => (
+                        <div
+                          key={column.accessorKey}
+                          className="flex items-center space-x-2"
                         >
-                          {column.label}
-                        </label>
-                      </div>
-                    ))}
+                          <Checkbox
+                            id={column.id}
+                            checked={selectedColumns.includes(
+                              column.accessorKey
+                            )}
+                            onCheckedChange={() =>
+                              handleColumnToggle(column.accessorKey)
+                            }
+                            className="border-green-950  data-[state=checked]:bg-green-950 data-[state=checked]:border-green-950"
+                          />
+                          <label
+                            htmlFor={column.accessorKey}
+                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                          >
+                            {getColumnLabel(column)}
+                          </label>
+                        </div>
+                      ))}
                   </div>
                 </ScrollArea>
               </div>
