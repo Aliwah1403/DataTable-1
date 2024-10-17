@@ -25,25 +25,11 @@ import { cn } from "@/lib/utils";
 import { FileText, FileSpreadsheet, FileJson, Loader2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-// const columns = [
-//   { id: "registration", label: "Registration" },
-//   { id: "driver", label: "Driver" },
-//   { id: "destination", label: "Destination" },
-//   { id: "rate", label: "Rate" },
-//   { id: "detentionFee", label: "Detention Fee" },
-//   { id: "fuel", label: "Fuel" },
-//   { id: "clerkFee", label: "Clerk Fee" },
-//   { id: "milageFee", label: "Milage Fee" },
-//   { id: "parking", label: "Parking" },
-//   { id: "repairCost", label: "Repair Cost" },
-//   { id: "extraCost", label: "Extra Cost" },
-// ];
-
 export function ExportModal({ columns }) {
   const [exportType, setExportType] = useState(null);
   const [loadingType, setLoadingType] = useState(null);
   const [selectedColumns, setSelectedColumns] = useState(
-    columns.map((col) => col.id)
+    columns.filter((col) => col.accessorKey).map((col) => col.accessorKey)
   );
   const [dateRange, setDateRange] = useState({
     from: new Date(),
