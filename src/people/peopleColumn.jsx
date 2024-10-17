@@ -55,6 +55,12 @@ export const peopleColums = [
     filterFn: includesStringFilterFn,
   },
   {
+    accessorKey: "date_of_birth",
+    header: ({column}) => (
+      <DataTableColumnHeader column={column} title="Date of Birth"/>
+    )
+  },
+  {
     id: "actions",
     cell: ({ row }) => {
       const people = row.original;

@@ -58,6 +58,7 @@ import DateInputFilter from "../components/dateinputfilter";
 
 import { exportToExcel } from "../lib/xlsx";
 import { DataTableFacetedFilter } from "../components/faceted-filter";
+import { ExportModal } from "@/components/dataexportmodal";
 
 export function DataTable({ columns, data }) {
   const [sorting, setSorting] = useState([]);
@@ -153,7 +154,7 @@ export function DataTable({ columns, data }) {
 
             <div className="flex flex-row gap-2">
               {/* export data button */}
-              <Button
+              {/* <Button
                 size="sm"
                 className="h-8 bg-[#109189] hover:bg-[#11746e]"
                 onClick={() => exportToExcel()}
@@ -174,7 +175,9 @@ export function DataTable({ columns, data }) {
                   ></path>
                 </svg>
                 Export
-              </Button>
+              </Button> */}
+
+              <ExportModal />
 
               {/* Column visibility dropdown */}
               <DataTableViewOptions table={table} />
