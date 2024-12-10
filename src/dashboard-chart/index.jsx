@@ -8,7 +8,12 @@ import {
   parseISO,
   subDays,
 } from "date-fns";
-import { CalendarIcon } from "lucide-react";
+import {
+  CalendarIcon,
+  Monitor,
+  WalletIcon,
+  CreditCardIcon,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -232,10 +237,12 @@ export default function ExpenditureCharts() {
               income: {
                 label: "Income",
                 color: "hsl(var(--primary))",
+                icon: WalletIcon,
               },
               expenses: {
                 label: "Expenses",
                 color: "hsl(var(--destructive))",
+                icon: CreditCardIcon,
               },
             }}
             className="h-[400px] w-full"
