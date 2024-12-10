@@ -30,6 +30,8 @@ import {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
+  ChartLegend,
+  ChartLegendContent,
 } from "@/components/ui/chart";
 import { Bar, BarChart, Line, LineChart, XAxis, YAxis } from "recharts";
 
@@ -249,6 +251,7 @@ export default function ExpenditureCharts() {
                   tickFormatter={(value) => `${(value / 1000).toFixed(0)}K`}
                 />
                 <ChartTooltip content={<ChartTooltipContent />} />
+                <ChartLegend content={<ChartLegendContent />} />
                 <Bar dataKey="income" fill="#053030" radius={[4, 4, 0, 0]} />
                 <Bar dataKey="expenses" fill="#1cb447" radius={[4, 4, 0, 0]} />
               </BarChart>
