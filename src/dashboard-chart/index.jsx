@@ -30,7 +30,6 @@ import {
 import { Calendar } from "@/components/ui/calendar";
 import { cn } from "@/lib/utils";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
 import {
   ChartContainer,
   ChartTooltip,
@@ -38,15 +37,23 @@ import {
   ChartLegend,
   ChartLegendContent,
 } from "@/components/ui/chart";
-import { Bar, BarChart, Line, LineChart, XAxis, YAxis } from "recharts";
+import {
+  Area,
+  AreaChart,
+  Bar,
+  BarChart,
+  Line,
+  LineChart,
+  XAxis,
+  YAxis,
+} from "recharts";
 
-// Generate mock data for 12 months plus the last 7 days
+// Your existing mock data generation code
 const generateMockData = () => {
   const today = new Date();
   const oneYearAgo = subMonths(today, 12);
   const data = [];
 
-  // Generate data for the past 12 months
   for (let i = 0; i < 365; i++) {
     const date = addDays(oneYearAgo, i);
     data.push({
@@ -57,7 +64,6 @@ const generateMockData = () => {
     });
   }
 
-  // Add data for the last 7 days (including today)
   for (let i = 6; i >= 0; i--) {
     const date = subDays(today, i);
     data.push({
@@ -73,7 +79,6 @@ const generateMockData = () => {
 
 const mockData = generateMockData();
 
-// Function to filter data based on date range
 const filterDataByDateRange = (data, startDate, endDate) => {
   return data.filter((item) => {
     const itemDate = parseISO(item.date);
@@ -88,7 +93,6 @@ export default function ExpenditureCharts() {
   });
   const [timeRange, setTimeRange] = React.useState("1M");
 
-  // Filter data based on date range
   const filteredData = React.useMemo(
     () => filterDataByDateRange(mockData, dateRange.from, dateRange.to),
     [dateRange]
@@ -101,8 +105,8 @@ export default function ExpenditureCharts() {
       case "7D":
         setDateRange({ from: addDays(today, -7), to: today });
         break;
-      case "1M":
-        setDateRange({ from: startOfMonth(today), to: endOfMonth(today) });
+      case "30D":
+        setDateRange({ from: addDays(today, -30), to: today });
         break;
       case "3M":
         setDateRange({
@@ -134,13 +138,13 @@ export default function ExpenditureCharts() {
   const handleDateRangeChange = (range) => {
     if (range?.from && range?.to) {
       setDateRange(range);
-      setTimeRange("ALL"); // Reset time range when custom date is selected
+      setTimeRange("ALL");
     }
   };
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-col justify-end gap-4 md:flex-row md:items-center ">
+      <div className="flex flex-col justify-end gap-4 md:flex-row md:items-center">
         <div className="inline-flex rounded-lg border bg-background p-1">
           <Button
             variant={timeRange === "7D" ? "secondary" : "ghost"}
@@ -222,12 +226,12 @@ export default function ExpenditureCharts() {
             config={{
               income: {
                 label: "Income",
-                color: "hsl(var(--primary))",
+                color: "#053030",
                 icon: WalletIcon,
               },
               expenses: {
                 label: "Expenses",
-                color: "hsl(var(--destructive))",
+                color: "#1cb447",
                 icon: CreditCardIcon,
               },
             }}
@@ -250,6 +254,89 @@ export default function ExpenditureCharts() {
           </ChartContainer>
         </CardContent>
       </Card>
+
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <Card>
+          <CardHeader>
+            <CardTitle>Income Trend (KES)</CardTitle>
+            <CardDescription>
+              Income analysis over selected period
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <ChartContainer
+              config={{
+                income: {
+                  label: "Income",
+                  color: "#053030",
+                  icon: WalletIcon,
+                },
+              }}
+              className="h-[300px] w-full"
+            >
+              <LineChart data={filteredData}>
+                <XAxis
+                  dataKey="date"
+                  tickFormatter={(value) => format(parseISO(value), "MMM dd")}
+                  interval={Math.floor(filteredData.length / 10)}
+                />
+                <YAxis
+                  tickFormatter={(value) => `${(value / 1000).toFixed(0)}K`}
+                />
+                <ChartTooltip content={<ChartTooltipContent />} />
+                <Line
+                  type="monotone"
+                  dataKey="income"
+                  stroke="#053030"
+                  strokeWidth={2}
+                  dot={false}
+                />
+              </LineChart>
+            </ChartContainer>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Expense Analysis (KES)</CardTitle>
+            <CardDescription>
+              Expense patterns over selected period
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <ChartContainer
+              config={{
+                expenses: {
+                  label: "Expenses",
+                  color: "#1cb447",
+                  icon: CreditCardIcon,
+                },
+              }}
+              className="h-[300px] w-full"
+            >
+              <AreaChart data={filteredData}>
+                <XAxis
+                  dataKey="date"
+                  tickFormatter={(value) => format(parseISO(value), "MMM dd")}
+                  interval={Math.floor(filteredData.length / 10)}
+                />
+                <YAxis
+                  tickFormatter={(value) => `${(value / 1000).toFixed(0)}K`}
+                />
+                <ChartTooltip content={<ChartTooltipContent />} />
+                <Area
+                  type="monotone"
+                  dataKey="expenses"
+                  fill="#1cb447"
+                  fillOpacity={0.2}
+                  stroke="#1cb447"
+                  strokeWidth={2}
+                />
+              </AreaChart>
+            </ChartContainer>
+          </CardContent>
+        </Card>
+      </div>
     </div>
   );
 }
