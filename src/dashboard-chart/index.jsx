@@ -87,7 +87,6 @@ export default function ExpenditureCharts() {
     to: endOfMonth(new Date()),
   });
   const [timeRange, setTimeRange] = React.useState("1M");
-  const [chartType, setChartType] = React.useState("bar");
 
   // Filter data based on date range
   const filteredData = React.useMemo(
@@ -142,12 +141,6 @@ export default function ExpenditureCharts() {
   return (
     <div className="space-y-4">
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-        <Tabs defaultValue="bar" onValueChange={(v) => setChartType(v)}>
-          <TabsList>
-            <TabsTrigger value="bar">Bar Chart</TabsTrigger>
-            <TabsTrigger value="line">Line Chart</TabsTrigger>
-          </TabsList>
-        </Tabs>
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-2">
             <Button
@@ -247,8 +240,7 @@ export default function ExpenditureCharts() {
             }}
             className="h-[400px] w-full"
           >
-            {chartType === "bar" ? (
-              <BarChart data={filteredData}>
+           <BarChart data={filteredData}>
                 <XAxis
                   dataKey="date"
                   tickFormatter={(value) => format(parseISO(value), "MMM dd")}
@@ -262,33 +254,6 @@ export default function ExpenditureCharts() {
                 <Bar dataKey="income" fill="#053030" radius={[4, 4, 0, 0]} />
                 <Bar dataKey="expenses" fill="#1cb447" radius={[4, 4, 0, 0]} />
               </BarChart>
-            ) : (
-              <LineChart data={filteredData}>
-                <XAxis
-                  dataKey="date"
-                  tickFormatter={(value) => format(parseISO(value), "MMM dd")}
-                  interval={Math.floor(filteredData.length / 10)}
-                />
-                <YAxis
-                  tickFormatter={(value) => `${(value / 1000).toFixed(0)}K`}
-                />
-                <ChartTooltip content={<ChartTooltipContent />} />
-                <Line
-                  type="monotone"
-                  dataKey="income"
-                  stroke="#053030"
-                  strokeWidth={2}
-                  dot={false}
-                />
-                <Line
-                  type="monotone"
-                  dataKey="expenses"
-                  stroke="#1cb447"
-                  strokeWidth={2}
-                  dot={false}
-                />
-              </LineChart>
-            )}
           </ChartContainer>
         </CardContent>
       </Card>
