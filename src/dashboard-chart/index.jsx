@@ -140,7 +140,7 @@ export default function ExpenditureCharts() {
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+      <div className="flex flex-col justify-end gap-4 md:flex-row md:items-center ">
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-2">
             <Button
