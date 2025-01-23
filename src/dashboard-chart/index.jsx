@@ -141,65 +141,58 @@ export default function ExpenditureCharts() {
   return (
     <div className="space-y-4">
       <div className="flex flex-col justify-end gap-4 md:flex-row md:items-center ">
-        <div className="flex items-center gap-2">
-          <div className="flex items-center gap-2">
-            <Button
-              variant={timeRange === "7D" ? "default" : "outline"}
-              size="sm"
-              onClick={() => handleTimeRangeChange("7D")}
-            >
-              7D
-            </Button>
-            <Button
-              variant={timeRange === "1M" ? "default" : "outline"}
-              size="sm"
-              onClick={() => handleTimeRangeChange("1M")}
-            >
-              1M
-            </Button>
-            <Button
-              variant={timeRange === "3M" ? "default" : "outline"}
-              size="sm"
-              onClick={() => handleTimeRangeChange("3M")}
-            >
-              3M
-            </Button>
-            <Button
-              variant={timeRange === "6M" ? "default" : "outline"}
-              size="sm"
-              onClick={() => handleTimeRangeChange("6M")}
-            >
-              6M
-            </Button>
-            <Button
-              variant={timeRange === "1Y" ? "default" : "outline"}
-              size="sm"
-              onClick={() => handleTimeRangeChange("1Y")}
-            >
-              1Y
-            </Button>
-          </div>
+        <div className="inline-flex rounded-lg border bg-background p-1">
+          <Button
+            variant={timeRange === "7D" ? "secondary" : "ghost"}
+            size="sm"
+            onClick={() => handleTimeRangeChange("7D")}
+            className="rounded-l-md"
+          >
+            7D
+          </Button>
+          <Button
+            variant={timeRange === "30D" ? "secondary" : "ghost"}
+            size="sm"
+            onClick={() => handleTimeRangeChange("30D")}
+            className="rounded-none border-l"
+          >
+            1M
+          </Button>
+          <Button
+            variant={timeRange === "3M" ? "secondary" : "ghost"}
+            size="sm"
+            onClick={() => handleTimeRangeChange("3M")}
+            className="rounded-none border-l"
+          >
+            3M
+          </Button>
+          <Button
+            variant={timeRange === "6M" ? "secondary" : "ghost"}
+            size="sm"
+            onClick={() => handleTimeRangeChange("6M")}
+            className="rounded-none border-l"
+          >
+            6M
+          </Button>
           <Popover>
             <PopoverTrigger asChild>
               <Button
-                variant="outline"
-                className={cn(
-                  "justify-start text-left font-normal",
-                  !dateRange && "text-muted-foreground"
-                )}
+                variant={timeRange === "custom" ? "secondary" : "ghost"}
+                size="sm"
+                className="rounded-r-md border-l"
               >
                 <CalendarIcon className="mr-2 h-4 w-4" />
                 {dateRange?.from ? (
                   dateRange.to ? (
                     <>
-                      {format(dateRange.from, "LLL dd, y")} -{" "}
-                      {format(dateRange.to, "LLL dd, y")}
+                      {format(dateRange.from, "LLL dd")} -{" "}
+                      {format(dateRange.to, "LLL dd")}
                     </>
                   ) : (
-                    format(dateRange.from, "LLL dd, y")
+                    format(dateRange.from, "LLL dd")
                   )
                 ) : (
-                  <span>Pick a date range</span>
+                  <span>Custom</span>
                 )}
               </Button>
             </PopoverTrigger>
@@ -240,20 +233,20 @@ export default function ExpenditureCharts() {
             }}
             className="h-[400px] w-full"
           >
-           <BarChart data={filteredData}>
-                <XAxis
-                  dataKey="date"
-                  tickFormatter={(value) => format(parseISO(value), "MMM dd")}
-                  interval={Math.floor(filteredData.length / 10)}
-                />
-                <YAxis
-                  tickFormatter={(value) => `${(value / 1000).toFixed(0)}K`}
-                />
-                <ChartTooltip content={<ChartTooltipContent />} />
-                <ChartLegend content={<ChartLegendContent />} />
-                <Bar dataKey="income" fill="#053030" radius={[4, 4, 0, 0]} />
-                <Bar dataKey="expenses" fill="#1cb447" radius={[4, 4, 0, 0]} />
-              </BarChart>
+            <BarChart data={filteredData}>
+              <XAxis
+                dataKey="date"
+                tickFormatter={(value) => format(parseISO(value), "MMM dd")}
+                interval={Math.floor(filteredData.length / 10)}
+              />
+              <YAxis
+                tickFormatter={(value) => `${(value / 1000).toFixed(0)}K`}
+              />
+              <ChartTooltip content={<ChartTooltipContent />} />
+              <ChartLegend content={<ChartLegendContent />} />
+              <Bar dataKey="income" fill="#053030" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="expenses" fill="#1cb447" radius={[4, 4, 0, 0]} />
+            </BarChart>
           </ChartContainer>
         </CardContent>
       </Card>
