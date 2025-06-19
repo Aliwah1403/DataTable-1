@@ -37,7 +37,7 @@ import {
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 import { Settings2 } from "lucide-react";
 import { CalendarIcon, Cross2Icon } from "@radix-ui/react-icons";
@@ -61,15 +61,43 @@ import { DataTableFacetedFilter } from "../components/faceted-filter";
 import { ExportModal } from "@/components/dataexportmodal";
 import { peopleColums } from "./peopleColumn";
 
-export function DataTable({ columns, data }) {
+import {
+  DataTableFilter,
+  useDataTableFilters,
+} from "../components/data-table-filter";
+import { columnsConfig } from "./peopleColumn";
+import {
+  createTSTColumns,
+  createTSTFilters,
+} from "../components/data-table-filter/integrations/tanstack-table";
+
+export function DataTable({ data }) {
   const [sorting, setSorting] = useState([]);
   const [columnFilters, setColumnFilters] = useState([]);
   const [columnVisibility, setColumnVisibility] = useState([]);
   const [rowSelection, setRowSelection] = useState([]);
   const [date, setDate] = useState();
+
+  const { columns, filters, actions, strategy } = useDataTableFilters({
+    strategy: "client",
+    data: data ?? [],
+    columnsConfig,
+  });
+
+  const tstColumns = useMemo(
+    () =>
+      createTSTColumns({
+        columns: peopleColums,
+        configs: columnsConfig,
+      }),
+    [columns]
+  );
+
+  const tstFilters = useMemo(() => createTSTFilters(filters), [filters]);
+
   const table = useReactTable({
     data,
-    columns,
+    columns: tstColumns,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
     getSortedRowModel: getSortedRowModel(),
@@ -84,7 +112,7 @@ export function DataTable({ columns, data }) {
 
     state: {
       sorting,
-      columnFilters,
+      columnFilters: tstFilters,
       columnVisibility,
       rowSelection,
     },
@@ -98,8 +126,15 @@ export function DataTable({ columns, data }) {
         <CardHeader>
           <div className="flex justify-between items-center py-4">
             <div className="flex flex-row gap-2">
+              {/* BazzaUI filters */}
+              <DataTableFilter
+                filters={filters}
+                columns={columns}
+                actions={actions}
+                strategy={strategy}
+              />
               {/* Filter input field */}
-              <Input
+              {/* <Input
                 placeholder="Filter by Name"
                 className="max-w-sm"
                 value={table.getColumn("first_name")?.getFilterValue() ?? ""}
@@ -126,7 +161,7 @@ export function DataTable({ columns, data }) {
                   Reset
                   <Cross2Icon className="ml-2 size-4" aria-hidden="true" />
                 </Button>
-              )}
+              )} */}
 
               {/* Date picker filter */}
               {/* <Popover>
@@ -178,7 +213,7 @@ export function DataTable({ columns, data }) {
                 Export
               </Button> */}
 
-              <ExportModal columns={peopleColums} />
+              {/* <ExportModal columns={peopleColums} /> */}
 
               {/* Column visibility dropdown */}
               <DataTableViewOptions table={table} />
