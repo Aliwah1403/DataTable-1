@@ -65,7 +65,7 @@ import {
   DataTableFilter,
   useDataTableFilters,
 } from "../components/data-table-filter";
-import { columnsConfig } from "./peopleColumn";
+import { columnsConfig } from "./filters";
 import {
   createTSTColumns,
   createTSTFilters,
