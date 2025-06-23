@@ -6,6 +6,7 @@ export const people = [
     email: "epriddis0@elegantthemes.com",
     gender: "Male",
     date_of_birth: "04/04/2021",
+    salary: 48237,
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const people = [
     email: "meplate1@histats.com",
     gender: "Female",
     date_of_birth: "13/03/2008",
+    salary: 92754,
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const people = [
     email: "bmithun2@quantcast.com",
     gender: "Male",
     date_of_birth: "26/11/2022",
+    salary: 1537,
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const people = [
     email: "evynarde3@china.com.cn",
     gender: "Female",
     date_of_birth: "09/01/2017",
+    salary: 67820,
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ export const people = [
     email: "wsongest4@wiley.com",
     gender: "Male",
     date_of_birth: "30/07/2002",
+    salary: 23456,
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ export const people = [
     email: "ekleinlerer5@elegantthemes.com",
     gender: "Bigender",
     date_of_birth: "22/10/2016",
+    salary: 80012,
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ export const people = [
     email: "prolfs6@themeforest.net",
     gender: "Male",
     date_of_birth: "13/01/2009",
+    salary: 12000,
   },
   {
     id: 8,
@@ -62,6 +69,7 @@ export const people = [
     email: "klugg7@icio.us",
     gender: "Female",
     date_of_birth: "14/01/2005",
+    salary: 54000,
   },
   {
     id: 9,
@@ -70,6 +78,7 @@ export const people = [
     email: "prebbeck8@hc360.com",
     gender: "Female",
     date_of_birth: "26/10/2009",
+    salary: 21000,
   },
   {
     id: 10,
@@ -78,6 +87,7 @@ export const people = [
     email: "eboorne9@reverbnation.com",
     gender: "Female",
     date_of_birth: "21/09/2023",
+    salary: 99999,
   },
   {
     id: 11,
@@ -86,6 +96,7 @@ export const people = [
     email: "nthibodeauxa@symantec.com",
     gender: "Male",
     date_of_birth: "02/10/2003",
+    salary: 50000,
   },
   {
     id: 12,
@@ -94,6 +105,7 @@ export const people = [
     email: "ssynanb@economist.com",
     gender: "Polygender",
     date_of_birth: "02/09/2020",
+    salary: 75000,
   },
   {
     id: 13,
@@ -102,6 +114,7 @@ export const people = [
     email: "tagusc@lulu.com",
     gender: "Agender",
     date_of_birth: "31/03/2020",
+    salary: 30000,
   },
   {
     id: 14,
@@ -110,6 +123,7 @@ export const people = [
     email: "sjosifovitzd@wikispaces.com",
     gender: "Male",
     date_of_birth: "26/11/2018",
+    salary: 45000,
   },
   {
     id: 15,
@@ -118,6 +132,7 @@ export const people = [
     email: "sgeorgee@xrea.com",
     gender: "Male",
     date_of_birth: "25/01/2019",
+    salary: 55000,
   },
   {
     id: 16,
@@ -126,6 +141,7 @@ export const people = [
     email: "rrowlingf@stanford.edu",
     gender: "Male",
     date_of_birth: "11/10/2002",
+    salary: 60000,
   },
   {
     id: 17,
@@ -134,6 +150,7 @@ export const people = [
     email: "fvansaltsbergg@latimes.com",
     gender: "Male",
     date_of_birth: "09/02/2017",
+    salary: 35000,
   },
   {
     id: 18,
@@ -142,6 +159,7 @@ export const people = [
     email: "kfawdryh@nyu.edu",
     gender: "Male",
     date_of_birth: "05/07/2020",
+    salary: 40000,
   },
   {
     id: 19,
@@ -150,6 +168,7 @@ export const people = [
     email: "nvanderbekeni@noaa.gov",
     gender: "Female",
     date_of_birth: "07/09/2011",
+    salary: 22000,
   },
   {
     id: 20,
@@ -158,6 +177,7 @@ export const people = [
     email: "ndonovinj@blogspot.com",
     gender: "Male",
     date_of_birth: "25/04/2021",
+    salary: 48000,
   },
   {
     id: 21,
@@ -166,6 +186,7 @@ export const people = [
     email: "kmochark@zdnet.com",
     gender: "Female",
     date_of_birth: "11/01/2021",
+    salary: 53000,
   },
   {
     id: 22,
@@ -174,6 +195,7 @@ export const people = [
     email: "ksprulll@gizmodo.com",
     gender: "Female",
     date_of_birth: "08/07/2009",
+    salary: 39000,
   },
   {
     id: 23,
@@ -182,6 +204,7 @@ export const people = [
     email: "atemprellm@diigo.com",
     gender: "Male",
     date_of_birth: "17/11/2011",
+    salary: 27000,
   },
   {
     id: 24,
@@ -190,6 +213,7 @@ export const people = [
     email: "rsabbinn@istockphoto.com",
     gender: "Male",
     date_of_birth: "27/10/2008",
+    salary: 32000,
   },
   {
     id: 25,
@@ -198,6 +222,7 @@ export const people = [
     email: "aduntono@craigslist.org",
     gender: "Female",
     date_of_birth: "08/05/2010",
+    salary: 29000,
   },
   {
     id: 26,
@@ -206,6 +231,7 @@ export const people = [
     email: "poneliganp@bluehost.com",
     gender: "Male",
     date_of_birth: "28/09/2019",
+    salary: 15000,
   },
   {
     id: 27,
@@ -214,6 +240,7 @@ export const people = [
     email: "cungererq@sitemeter.com",
     gender: "Female",
     date_of_birth: "23/10/2000",
+    salary: 72000,
   },
   {
     id: 28,
@@ -222,6 +249,7 @@ export const people = [
     email: "dkohneker@marriott.com",
     gender: "Male",
     date_of_birth: "04/02/2003",
+    salary: 11000,
   },
   {
     id: 29,
@@ -230,6 +258,7 @@ export const people = [
     email: "fdietsches@foxnews.com",
     gender: "Female",
     date_of_birth: "29/08/2010",
+    salary: 64000,
   },
   {
     id: 30,
@@ -238,6 +267,7 @@ export const people = [
     email: "ecoullingt@cbc.ca",
     gender: "Male",
     date_of_birth: "20/01/2003",
+    salary: 37000,
   },
   {
     id: 31,
@@ -246,6 +276,7 @@ export const people = [
     email: "rdoxseyu@yelp.com",
     gender: "Female",
     date_of_birth: "04/03/2006",
+    salary: 88000,
   },
   {
     id: 32,
@@ -254,6 +285,7 @@ export const people = [
     email: "dmacconneelyv@furl.net",
     gender: "Genderqueer",
     date_of_birth: "10/08/2000",
+    salary: 92000,
   },
   {
     id: 33,
@@ -262,6 +294,7 @@ export const people = [
     email: "ocockw@creativecommons.org",
     gender: "Female",
     date_of_birth: "22/11/2022",
+    salary: 19000,
   },
   {
     id: 34,
@@ -270,6 +303,7 @@ export const people = [
     email: "fmahaddyx@xinhuanet.com",
     gender: "Male",
     date_of_birth: "10/11/2010",
+    salary: 78000,
   },
   {
     id: 35,
@@ -278,6 +312,7 @@ export const people = [
     email: "hbartaloniy@usda.gov",
     gender: "Female",
     date_of_birth: "10/04/2018",
+    salary: 56000,
   },
   {
     id: 36,
@@ -286,6 +321,7 @@ export const people = [
     email: "smatyatinz@amazon.co.uk",
     gender: "Female",
     date_of_birth: "22/07/2016",
+    salary: 99000,
   },
   {
     id: 37,
@@ -294,6 +330,7 @@ export const people = [
     email: "cdiggell10@hexun.com",
     gender: "Male",
     date_of_birth: "10/05/2016",
+    salary: 15000,
   },
   {
     id: 38,
@@ -302,6 +339,7 @@ export const people = [
     email: "rsebright11@drupal.org",
     gender: "Male",
     date_of_birth: "13/06/2016",
+    salary: 20000,
   },
   {
     id: 39,
@@ -310,6 +348,7 @@ export const people = [
     email: "mmelvin12@cmu.edu",
     gender: "Female",
     date_of_birth: "17/09/2009",
+    salary: 30000,
   },
   {
     id: 40,
@@ -318,6 +357,7 @@ export const people = [
     email: "psimunek13@moonfruit.com",
     gender: "Genderfluid",
     date_of_birth: "18/02/2013",
+    salary: 45000,
   },
   {
     id: 41,
@@ -326,6 +366,7 @@ export const people = [
     email: "vespinay14@biblegateway.com",
     gender: "Female",
     date_of_birth: "20/07/2012",
+    salary: 55000,
   },
   {
     id: 42,
@@ -334,6 +375,7 @@ export const people = [
     email: "tcradock15@goodreads.com",
     gender: "Female",
     date_of_birth: "11/05/2012",
+    salary: 47000,
   },
   {
     id: 43,
@@ -342,6 +384,7 @@ export const people = [
     email: "lhabben16@theguardian.com",
     gender: "Female",
     date_of_birth: "25/06/2000",
+    salary: 39000,
   },
   {
     id: 44,
@@ -350,6 +393,7 @@ export const people = [
     email: "adeverille17@gnu.org",
     gender: "Male",
     date_of_birth: "23/05/2012",
+    salary: 41000,
   },
   {
     id: 45,
@@ -358,6 +402,7 @@ export const people = [
     email: "ktrusse18@ucla.edu",
     gender: "Female",
     date_of_birth: "12/08/2010",
+    salary: 52000,
   },
   {
     id: 46,
@@ -366,6 +411,7 @@ export const people = [
     email: "ccristobal19@buzzfeed.com",
     gender: "Female",
     date_of_birth: "29/09/2013",
+    salary: 67000,
   },
   {
     id: 47,
@@ -374,6 +420,7 @@ export const people = [
     email: "cbiaggelli1a@cbc.ca",
     gender: "Polygender",
     date_of_birth: "25/09/2022",
+    salary: 88000,
   },
   {
     id: 48,
@@ -382,6 +429,7 @@ export const people = [
     email: "kperel1b@about.me",
     gender: "Female",
     date_of_birth: "07/11/2015",
+    salary: 92000,
   },
   {
     id: 49,
@@ -390,6 +438,7 @@ export const people = [
     email: "ogrief1c@digg.com",
     gender: "Genderqueer",
     date_of_birth: "26/03/2012",
+    salary: 78000,
   },
   {
     id: 50,
@@ -398,6 +447,7 @@ export const people = [
     email: "lskinner1d@engadget.com",
     gender: "Male",
     date_of_birth: "25/09/2016",
+    salary: 15000,
   },
   {
     id: 51,
@@ -406,6 +456,7 @@ export const people = [
     email: "dsage1e@google.it",
     gender: "Male",
     date_of_birth: "20/08/2012",
+    salary: 60000,
   },
   {
     id: 52,
@@ -414,6 +465,7 @@ export const people = [
     email: "teaves1f@scientificamerican.com",
     gender: "Male",
     date_of_birth: "03/07/2002",
+    salary: 45000,
   },
   {
     id: 53,
@@ -422,6 +474,7 @@ export const people = [
     email: "drowth1g@ifeng.com",
     gender: "Female",
     date_of_birth: "21/01/2008",
+    salary: 32000,
   },
   {
     id: 54,
@@ -430,6 +483,7 @@ export const people = [
     email: "dgunn1h@simplemachines.org",
     gender: "Male",
     date_of_birth: "11/03/2009",
+    salary: 99000,
   },
   {
     id: 55,
@@ -438,6 +492,7 @@ export const people = [
     email: "tllopis1i@com.com",
     gender: "Male",
     date_of_birth: "31/12/2014",
+    salary: 78000,
   },
   {
     id: 56,
@@ -446,6 +501,7 @@ export const people = [
     email: "tdallin1j@eventbrite.com",
     gender: "Male",
     date_of_birth: "19/07/2006",
+    salary: 15000,
   },
   {
     id: 57,
@@ -454,6 +510,7 @@ export const people = [
     email: "whuxter1k@php.net",
     gender: "Male",
     date_of_birth: "04/07/2023",
+    salary: 60000,
   },
   {
     id: 58,
@@ -462,6 +519,7 @@ export const people = [
     email: "bboultwood1l@cmu.edu",
     gender: "Male",
     date_of_birth: "26/06/2000",
+    salary: 45000,
   },
   {
     id: 59,
@@ -470,6 +528,7 @@ export const people = [
     email: "wabeles1m@example.com",
     gender: "Genderfluid",
     date_of_birth: "05/04/2001",
+    salary: 99000,
   },
   {
     id: 60,
@@ -478,6 +537,7 @@ export const people = [
     email: "cbarthod1n@hostgator.com",
     gender: "Female",
     date_of_birth: "28/03/2012",
+    salary: 56000,
   },
   {
     id: 61,
@@ -486,6 +546,7 @@ export const people = [
     email: "spindell1o@myspace.com",
     gender: "Male",
     date_of_birth: "03/12/2000",
+    salary: 45000,
   },
   {
     id: 62,
@@ -494,6 +555,7 @@ export const people = [
     email: "bcrus1p@gmpg.org",
     gender: "Polygender",
     date_of_birth: "23/08/2011",
+    salary: 78000,
   },
   {
     id: 63,
@@ -502,6 +564,7 @@ export const people = [
     email: "pheady1q@nbcnews.com",
     gender: "Female",
     date_of_birth: "27/09/2023",
+    salary: 15000,
   },
   {
     id: 64,
@@ -510,6 +573,7 @@ export const people = [
     email: "tmcrobert1r@free.fr",
     gender: "Female",
     date_of_birth: "15/01/2015",
+    salary: 45000,
   },
   {
     id: 65,
@@ -518,6 +582,7 @@ export const people = [
     email: "vmeneely1s@surveymonkey.com",
     gender: "Male",
     date_of_birth: "17/09/2023",
+    salary: 99000,
   },
   {
     id: 66,
@@ -526,6 +591,7 @@ export const people = [
     email: "ifarrand1t@unicef.org",
     gender: "Male",
     date_of_birth: "15/03/2020",
+    salary: 45000,
   },
   {
     id: 67,
@@ -534,6 +600,7 @@ export const people = [
     email: "bivchenko1u@businessinsider.com",
     gender: "Male",
     date_of_birth: "17/07/2006",
+    salary: 15000,
   },
   {
     id: 68,
@@ -542,6 +609,7 @@ export const people = [
     email: "bnolli1v@imdb.com",
     gender: "Male",
     date_of_birth: "08/01/2001",
+    salary: 45000,
   },
   {
     id: 69,
@@ -550,6 +618,7 @@ export const people = [
     email: "gjerrolt1w@huffingtonpost.com",
     gender: "Male",
     date_of_birth: "05/04/2001",
+    salary: 15000,
   },
   {
     id: 70,
@@ -558,6 +627,7 @@ export const people = [
     email: "nmcgrae1x@archive.org",
     gender: "Female",
     date_of_birth: "24/04/2022",
+    salary: 45000,
   },
   {
     id: 71,
@@ -566,6 +636,7 @@ export const people = [
     email: "gmogg1y@cpanel.net",
     gender: "Male",
     date_of_birth: "20/10/2015",
+    salary: 15000,
   },
   {
     id: 72,
@@ -574,6 +645,7 @@ export const people = [
     email: "akirvell1z@barnesandnoble.com",
     gender: "Genderqueer",
     date_of_birth: "05/02/2005",
+    salary: 45000,
   },
   {
     id: 73,
@@ -582,6 +654,7 @@ export const people = [
     email: "tvoisey20@weebly.com",
     gender: "Female",
     date_of_birth: "05/06/2004",
+    salary: 15000,
   },
   {
     id: 74,
@@ -590,6 +663,7 @@ export const people = [
     email: "hgahagan21@whitehouse.gov",
     gender: "Female",
     date_of_birth: "25/04/2004",
+    salary: 45000,
   },
   {
     id: 75,
@@ -598,6 +672,7 @@ export const people = [
     email: "srigard22@xrea.com",
     gender: "Male",
     date_of_birth: "30/08/2013",
+    salary: 15000,
   },
   {
     id: 76,
@@ -606,6 +681,7 @@ export const people = [
     email: "atousy23@plala.or.jp",
     gender: "Male",
     date_of_birth: "25/04/2009",
+    salary: 15000,
   },
   {
     id: 77,
@@ -614,6 +690,7 @@ export const people = [
     email: "dchurchman24@amazon.de",
     gender: "Male",
     date_of_birth: "15/08/2007",
+    salary: 15000,
   },
   {
     id: 78,
@@ -622,6 +699,7 @@ export const people = [
     email: "mhalleybone25@amazon.co.jp",
     gender: "Female",
     date_of_birth: "22/08/2014",
+    salary: 15000,
   },
   {
     id: 79,
@@ -630,6 +708,7 @@ export const people = [
     email: "oelstob26@home.pl",
     gender: "Female",
     date_of_birth: "03/03/2021",
+    salary: 15000,
   },
   {
     id: 80,
@@ -638,6 +717,7 @@ export const people = [
     email: "hvaller27@google.es",
     gender: "Male",
     date_of_birth: "02/08/2018",
+    salary: 15000,
   },
   {
     id: 81,
@@ -646,6 +726,7 @@ export const people = [
     email: "aketcher28@edublogs.org",
     gender: "Female",
     date_of_birth: "12/06/2019",
+    salary: 15000,
   },
   {
     id: 82,
@@ -654,6 +735,7 @@ export const people = [
     email: "llaydon29@stumbleupon.com",
     gender: "Male",
     date_of_birth: "05/05/2021",
+    salary: 15000,
   },
   {
     id: 83,
@@ -662,6 +744,7 @@ export const people = [
     email: "americ2a@imgur.com",
     gender: "Male",
     date_of_birth: "01/08/2014",
+    salary: 15000,
   },
   {
     id: 84,
@@ -670,6 +753,7 @@ export const people = [
     email: "gcordeau2b@microsoft.com",
     gender: "Female",
     date_of_birth: "21/12/2000",
+    salary: 15000,
   },
   {
     id: 85,
@@ -678,6 +762,7 @@ export const people = [
     email: "jgerard2c@mayoclinic.com",
     gender: "Female",
     date_of_birth: "20/01/2013",
+    salary: 15000,
   },
   {
     id: 86,
@@ -686,6 +771,7 @@ export const people = [
     email: "mregenhardt2d@army.mil",
     gender: "Male",
     date_of_birth: "31/03/2012",
+    salary: 15000,
   },
   {
     id: 87,
@@ -694,6 +780,7 @@ export const people = [
     email: "lhotson2e@ucsd.edu",
     gender: "Male",
     date_of_birth: "30/11/2022",
+    salary: 15000,
   },
   {
     id: 88,
@@ -702,6 +789,7 @@ export const people = [
     email: "mlegate2f@spiegel.de",
     gender: "Male",
     date_of_birth: "09/10/2021",
+    salary: 15000,
   },
   {
     id: 89,
@@ -710,6 +798,7 @@ export const people = [
     email: "mathow2g@people.com.cn",
     gender: "Female",
     date_of_birth: "13/04/2009",
+    salary: 15000,
   },
   {
     id: 90,
@@ -718,6 +807,7 @@ export const people = [
     email: "rlowmass2h@mashable.com",
     gender: "Female",
     date_of_birth: "20/06/2013",
+    salary: 15000,
   },
   {
     id: 91,
@@ -726,6 +816,7 @@ export const people = [
     email: "emapledorum2i@harvard.edu",
     gender: "Female",
     date_of_birth: "23/01/2002",
+    salary: 15000,
   },
   {
     id: 92,
@@ -734,6 +825,7 @@ export const people = [
     email: "ssiney2j@sun.com",
     gender: "Male",
     date_of_birth: "25/04/2022",
+    salary: 15000,
   },
   {
     id: 93,
@@ -742,6 +834,7 @@ export const people = [
     email: "meynaud2k@google.pl",
     gender: "Female",
     date_of_birth: "12/09/2013",
+    salary: 15000,
   },
   {
     id: 94,
@@ -750,6 +843,7 @@ export const people = [
     email: "wcoon2l@dot.gov",
     gender: "Male",
     date_of_birth: "06/05/2000",
+    salary: 15000,
   },
   {
     id: 95,
@@ -758,6 +852,7 @@ export const people = [
     email: "bdickens2m@imgur.com",
     gender: "Male",
     date_of_birth: "05/06/2012",
+    salary: 15000,
   },
   {
     id: 96,
@@ -766,6 +861,7 @@ export const people = [
     email: "aanger2n@slashdot.org",
     gender: "Female",
     date_of_birth: "03/08/2005",
+    salary: 15000,
   },
   {
     id: 97,
@@ -774,6 +870,7 @@ export const people = [
     email: "pvasilyonok2o@qq.com",
     gender: "Male",
     date_of_birth: "21/05/2004",
+    salary: 15000,
   },
   {
     id: 98,
@@ -782,6 +879,7 @@ export const people = [
     email: "cbrooks2p@storify.com",
     gender: "Female",
     date_of_birth: "07/02/2007",
+    salary: 15000,
   },
   {
     id: 99,
@@ -790,6 +888,7 @@ export const people = [
     email: "cliggins2q@goo.ne.jp",
     gender: "Female",
     date_of_birth: "08/09/2022",
+    salary: 15000,
   },
   {
     id: 100,
@@ -798,6 +897,7 @@ export const people = [
     email: "carkwright2r@tripod.com",
     gender: "Female",
     date_of_birth: "03/09/2004",
+    salary: 15000,
   },
   {
     id: 101,
@@ -806,6 +906,7 @@ export const people = [
     email: "tlodwick2s@imgur.com",
     gender: "Male",
     date_of_birth: "24/09/2023",
+    salary: 15000,
   },
   {
     id: 102,
@@ -814,6 +915,7 @@ export const people = [
     email: "ndegoey2t@com.com",
     gender: "Female",
     date_of_birth: "24/03/2019",
+    salary: 15000,
   },
   {
     id: 103,
@@ -822,6 +924,7 @@ export const people = [
     email: "iwhittington2u@examiner.com",
     gender: "Male",
     date_of_birth: "01/10/2023",
+    salary: 15000,
   },
   {
     id: 104,
@@ -830,6 +933,7 @@ export const people = [
     email: "dbrazelton2v@skype.com",
     gender: "Female",
     date_of_birth: "25/10/2023",
+    salary: 15000,
   },
   {
     id: 105,
@@ -838,6 +942,7 @@ export const people = [
     email: "rnertney2w@prweb.com",
     gender: "Female",
     date_of_birth: "26/01/2006",
+    salary: 15000,
   },
   {
     id: 106,
@@ -846,6 +951,7 @@ export const people = [
     email: "tpendre2x@shutterfly.com",
     gender: "Male",
     date_of_birth: "20/04/2016",
+    salary: 15000,
   },
   {
     id: 107,
@@ -854,6 +960,7 @@ export const people = [
     email: "oconkey2y@plala.or.jp",
     gender: "Female",
     date_of_birth: "06/06/2006",
+    salary: 15000,
   },
   {
     id: 108,
@@ -862,6 +969,7 @@ export const people = [
     email: "smickelwright2z@whitehouse.gov",
     gender: "Male",
     date_of_birth: "29/08/2010",
+    salary: 15000,
   },
   {
     id: 109,
@@ -870,6 +978,7 @@ export const people = [
     email: "lbullock30@nbcnews.com",
     gender: "Female",
     date_of_birth: "07/01/2018",
+    salary: 15000,
   },
   {
     id: 110,
@@ -878,6 +987,7 @@ export const people = [
     email: "edisney31@wordpress.com",
     gender: "Female",
     date_of_birth: "07/04/2007",
+    salary: 15000,
   },
   {
     id: 111,
@@ -886,6 +996,7 @@ export const people = [
     email: "lvaillant32@wisc.edu",
     gender: "Male",
     date_of_birth: "07/10/2003",
+    salary: 15000,
   },
   {
     id: 112,
@@ -894,6 +1005,7 @@ export const people = [
     email: "mcory33@ifeng.com",
     gender: "Female",
     date_of_birth: "01/08/2013",
+    salary: 15000,
   },
   {
     id: 113,
@@ -902,6 +1014,7 @@ export const people = [
     email: "tolooney34@comcast.net",
     gender: "Female",
     date_of_birth: "26/06/2004",
+    salary: 15000,
   },
   {
     id: 114,
@@ -910,6 +1023,7 @@ export const people = [
     email: "ggaffney35@google.com.au",
     gender: "Male",
     date_of_birth: "05/06/2019",
+    salary: 15000,
   },
   {
     id: 115,
@@ -918,6 +1032,7 @@ export const people = [
     email: "retchingham36@theatlantic.com",
     gender: "Male",
     date_of_birth: "02/03/2013",
+    salary: 15000,
   },
   {
     id: 116,
@@ -926,6 +1041,7 @@ export const people = [
     email: "aharrhy37@51.la",
     gender: "Female",
     date_of_birth: "25/05/2023",
+    salary: 15000,
   },
   {
     id: 117,
@@ -934,6 +1050,7 @@ export const people = [
     email: "kmacelane38@seesaa.net",
     gender: "Female",
     date_of_birth: "04/06/2012",
+    salary: 15000,
   },
   {
     id: 118,
@@ -942,6 +1059,7 @@ export const people = [
     email: "chartrick39@cocolog-nifty.com",
     gender: "Female",
     date_of_birth: "05/03/2022",
+    salary: 15000,
   },
   {
     id: 119,
@@ -950,6 +1068,7 @@ export const people = [
     email: "icummings3a@fotki.com",
     gender: "Male",
     date_of_birth: "24/12/2001",
+    salary: 15000,
   },
   {
     id: 120,
@@ -958,6 +1077,7 @@ export const people = [
     email: "fburk3b@mlb.com",
     gender: "Female",
     date_of_birth: "07/02/2011",
+    salary: 15000,
   },
   {
     id: 121,
@@ -966,6 +1086,7 @@ export const people = [
     email: "lpetrasch3c@theglobeandmail.com",
     gender: "Female",
     date_of_birth: "10/11/2018",
+    salary: 15000,
   },
   {
     id: 122,
@@ -974,6 +1095,7 @@ export const people = [
     email: "lsimionato3d@ask.com",
     gender: "Female",
     date_of_birth: "27/02/2008",
+    salary: 15000,
   },
   {
     id: 123,
@@ -982,6 +1104,7 @@ export const people = [
     email: "dpawson3e@facebook.com",
     gender: "Female",
     date_of_birth: "16/05/2006",
+    salary: 15000,
   },
   {
     id: 124,
@@ -990,6 +1113,7 @@ export const people = [
     email: "jfairbairn3f@bluehost.com",
     gender: "Male",
     date_of_birth: "14/10/2003",
+    salary: 15000,
   },
   {
     id: 125,
@@ -998,6 +1122,7 @@ export const people = [
     email: "dtaggett3g@1und1.de",
     gender: "Male",
     date_of_birth: "24/08/2022",
+    salary: 15000,
   },
   {
     id: 126,
@@ -1006,6 +1131,7 @@ export const people = [
     email: "geary3h@go.com",
     gender: "Female",
     date_of_birth: "07/03/2009",
+    salary: 15000,
   },
   {
     id: 127,
@@ -1014,6 +1140,7 @@ export const people = [
     email: "gdraysay3i@who.int",
     gender: "Female",
     date_of_birth: "02/02/2019",
+    salary: 15000,
   },
   {
     id: 128,
@@ -1022,6 +1149,7 @@ export const people = [
     email: "rcasine3j@google.fr",
     gender: "Female",
     date_of_birth: "13/09/2010",
+    salary: 15000,
   },
   {
     id: 129,
@@ -1030,6 +1158,7 @@ export const people = [
     email: "dspeddin3k@addthis.com",
     gender: "Female",
     date_of_birth: "12/10/2007",
+    salary: 15000,
   },
   {
     id: 130,
@@ -1038,6 +1167,7 @@ export const people = [
     email: "tleese3l@pinterest.com",
     gender: "Female",
     date_of_birth: "04/08/2020",
+    salary: 15000,
   },
   {
     id: 131,
@@ -1046,6 +1176,7 @@ export const people = [
     email: "hradden3m@rediff.com",
     gender: "Polygender",
     date_of_birth: "31/10/2019",
+    salary: 15000,
   },
   {
     id: 132,
@@ -1054,6 +1185,7 @@ export const people = [
     email: "llefriec3n@wsj.com",
     gender: "Male",
     date_of_birth: "16/06/2001",
+    salary: 15000,
   },
   {
     id: 133,
@@ -1062,6 +1194,7 @@ export const people = [
     email: "cberan3o@independent.co.uk",
     gender: "Genderfluid",
     date_of_birth: "17/11/2020",
+    salary: 15000,
   },
   {
     id: 134,
@@ -1070,6 +1203,7 @@ export const people = [
     email: "jgrabert3p@yellowbook.com",
     gender: "Female",
     date_of_birth: "28/06/2019",
+    salary: 15000,
   },
   {
     id: 135,
@@ -1078,6 +1212,7 @@ export const people = [
     email: "tbuckner3q@nationalgeographic.com",
     gender: "Male",
     date_of_birth: "13/01/2019",
+    salary: 15000,
   },
   {
     id: 136,
@@ -1086,6 +1221,7 @@ export const people = [
     email: "bmaryska3r@acquirethisname.com",
     gender: "Male",
     date_of_birth: "24/02/2002",
+    salary: 15000,
   },
   {
     id: 137,
@@ -1094,6 +1230,7 @@ export const people = [
     email: "respie3s@bloglines.com",
     gender: "Male",
     date_of_birth: "23/02/2005",
+    salary: 15000,
   },
   {
     id: 138,
@@ -1102,6 +1239,7 @@ export const people = [
     email: "rswinnerton3t@ted.com",
     gender: "Male",
     date_of_birth: "18/03/2011",
+    salary: 15000,
   },
   {
     id: 139,
@@ -1110,6 +1248,7 @@ export const people = [
     email: "btallach3u@ning.com",
     gender: "Male",
     date_of_birth: "05/05/2015",
+    salary: 15000,
   },
   {
     id: 140,
@@ -1118,6 +1257,7 @@ export const people = [
     email: "amcswan3v@com.com",
     gender: "Female",
     date_of_birth: "26/08/2019",
+    salary: 15000,
   },
   {
     id: 141,
@@ -1126,6 +1266,7 @@ export const people = [
     email: "bnormington3w@who.int",
     gender: "Bigender",
     date_of_birth: "21/08/2019",
+    salary: 15000,
   },
   {
     id: 142,
@@ -1134,6 +1275,7 @@ export const people = [
     email: "amarrion3x@springer.com",
     gender: "Male",
     date_of_birth: "09/01/2024",
+    salary: 15000,
   },
   {
     id: 143,
@@ -1142,6 +1284,7 @@ export const people = [
     email: "kbartkiewicz3y@i2i.jp",
     gender: "Female",
     date_of_birth: "09/04/2016",
+    salary: 15000,
   },
   {
     id: 144,
@@ -1150,6 +1293,7 @@ export const people = [
     email: "aderrell3z@instagram.com",
     gender: "Male",
     date_of_birth: "17/05/2016",
+    salary: 15000,
   },
   {
     id: 145,
@@ -1158,6 +1302,7 @@ export const people = [
     email: "emacnab40@omniture.com",
     gender: "Female",
     date_of_birth: "17/01/2007",
+    salary: 15000,
   },
   {
     id: 146,
@@ -1166,6 +1311,7 @@ export const people = [
     email: "ayardley41@irs.gov",
     gender: "Female",
     date_of_birth: "14/05/2001",
+    salary: 15000,
   },
   {
     id: 147,
@@ -1174,6 +1320,7 @@ export const people = [
     email: "jalbone42@bloglovin.com",
     gender: "Male",
     date_of_birth: "24/03/2012",
+    salary: 15000,
   },
   {
     id: 148,
@@ -1182,6 +1329,7 @@ export const people = [
     email: "hswinfen43@t-online.de",
     gender: "Male",
     date_of_birth: "19/03/2009",
+    salary: 15000,
   },
   {
     id: 149,
@@ -1190,6 +1338,7 @@ export const people = [
     email: "etheuss44@dell.com",
     gender: "Male",
     date_of_birth: "17/02/2003",
+    salary: 15000,
   },
   {
     id: 150,
@@ -1198,6 +1347,7 @@ export const people = [
     email: "vbielby45@tuttocitta.it",
     gender: "Male",
     date_of_birth: "09/12/2016",
+    salary: 15000,
   },
   {
     id: 151,
@@ -1206,6 +1356,7 @@ export const people = [
     email: "edunthorn46@technorati.com",
     gender: "Male",
     date_of_birth: "31/01/2023",
+    salary: 15000,
   },
   {
     id: 152,
@@ -1214,6 +1365,7 @@ export const people = [
     email: "jdurand47@google.ca",
     gender: "Female",
     date_of_birth: "31/10/2003",
+    salary: 15000,
   },
   {
     id: 153,
@@ -1222,6 +1374,7 @@ export const people = [
     email: "vwaterfall48@epa.gov",
     gender: "Genderqueer",
     date_of_birth: "31/10/2001",
+    salary: 15000,
   },
   {
     id: 154,
@@ -1230,6 +1383,7 @@ export const people = [
     email: "tbratty49@acquirethisname.com",
     gender: "Male",
     date_of_birth: "16/12/2007",
+    salary: 15000,
   },
   {
     id: 155,
@@ -1238,6 +1392,7 @@ export const people = [
     email: "edudny4a@microsoft.com",
     gender: "Agender",
     date_of_birth: "29/10/2008",
+    salary: 15000,
   },
   {
     id: 156,
@@ -1246,6 +1401,7 @@ export const people = [
     email: "mabethell4b@domainmarket.com",
     gender: "Female",
     date_of_birth: "01/06/2010",
+    salary: 15000,
   },
   {
     id: 157,
@@ -1254,6 +1410,7 @@ export const people = [
     email: "bblatcher4c@studiopress.com",
     gender: "Female",
     date_of_birth: "25/06/2014",
+    salary: 15000,
   },
   {
     id: 158,
@@ -1262,6 +1419,7 @@ export const people = [
     email: "rgoddertsf4d@artisteer.com",
     gender: "Female",
     date_of_birth: "16/07/2007",
+    salary: 15000,
   },
   {
     id: 159,
@@ -1270,6 +1428,7 @@ export const people = [
     email: "dwelman4e@amazon.co.jp",
     gender: "Female",
     date_of_birth: "15/01/2004",
+    salary: 15000,
   },
   {
     id: 160,
@@ -1278,6 +1437,7 @@ export const people = [
     email: "citzchaky4f@ft.com",
     gender: "Female",
     date_of_birth: "03/09/2016",
+    salary: 15000,
   },
   {
     id: 161,
@@ -1286,6 +1446,7 @@ export const people = [
     email: "adrury4g@cbslocal.com",
     gender: "Female",
     date_of_birth: "29/07/2015",
+    salary: 15000,
   },
   {
     id: 162,
@@ -1294,6 +1455,7 @@ export const people = [
     email: "mdew4h@vkontakte.ru",
     gender: "Male",
     date_of_birth: "24/05/2008",
+    salary: 15000,
   },
   {
     id: 163,
@@ -1302,6 +1464,7 @@ export const people = [
     email: "edielhenn4i@theatlantic.com",
     gender: "Female",
     date_of_birth: "14/06/2015",
+    salary: 15000,
   },
   {
     id: 164,
@@ -1310,6 +1473,7 @@ export const people = [
     email: "cnestle4j@arstechnica.com",
     gender: "Female",
     date_of_birth: "10/11/2014",
+    salary: 15000,
   },
   {
     id: 165,
@@ -1318,6 +1482,7 @@ export const people = [
     email: "dguerrier4k@yellowbook.com",
     gender: "Male",
     date_of_birth: "29/03/2015",
+    salary: 15000,
   },
   {
     id: 166,
@@ -1326,6 +1491,7 @@ export const people = [
     email: "frutherfoord4l@miibeian.gov.cn",
     gender: "Agender",
     date_of_birth: "04/04/2022",
+    salary: 15000,
   },
   {
     id: 167,
@@ -1334,6 +1500,7 @@ export const people = [
     email: "acasoni4m@latimes.com",
     gender: "Polygender",
     date_of_birth: "15/12/2007",
+    salary: 15000,
   },
   {
     id: 168,
@@ -1342,6 +1509,7 @@ export const people = [
     email: "eanthon4n@uiuc.edu",
     gender: "Female",
     date_of_birth: "20/02/2010",
+    salary: 15000,
   },
   {
     id: 169,
@@ -1350,6 +1518,7 @@ export const people = [
     email: "cchitson4o@dot.gov",
     gender: "Male",
     date_of_birth: "02/06/2000",
+    salary: 15000,
   },
   {
     id: 170,
@@ -1358,6 +1527,7 @@ export const people = [
     email: "omayes4p@domainmarket.com",
     gender: "Female",
     date_of_birth: "02/07/2004",
+    salary: 15000,
   },
   {
     id: 171,
@@ -1366,6 +1536,7 @@ export const people = [
     email: "mclayal4q@taobao.com",
     gender: "Male",
     date_of_birth: "23/04/2008",
+    salary: 15000,
   },
   {
     id: 172,
@@ -1374,6 +1545,7 @@ export const people = [
     email: "rclutheram4r@apple.com",
     gender: "Female",
     date_of_birth: "05/10/2006",
+    salary: 15000,
   },
   {
     id: 173,
@@ -1382,6 +1554,7 @@ export const people = [
     email: "dpydcock4s@jimdo.com",
     gender: "Female",
     date_of_birth: "11/07/2005",
+    salary: 15000,
   },
   {
     id: 174,
@@ -1390,6 +1563,7 @@ export const people = [
     email: "aroughey4t@php.net",
     gender: "Female",
     date_of_birth: "08/08/2008",
+    salary: 15000,
   },
   {
     id: 175,
@@ -1398,6 +1572,7 @@ export const people = [
     email: "wdewerson4u@so-net.ne.jp",
     gender: "Male",
     date_of_birth: "07/10/2005",
+    salary: 15000,
   },
   {
     id: 176,
@@ -1406,6 +1581,7 @@ export const people = [
     email: "bgregor4v@ehow.com",
     gender: "Female",
     date_of_birth: "05/05/2018",
+    salary: 15000,
   },
   {
     id: 177,
@@ -1414,6 +1590,7 @@ export const people = [
     email: "gemsley4w@techcrunch.com",
     gender: "Female",
     date_of_birth: "10/06/2018",
+    salary: 15000,
   },
   {
     id: 178,
@@ -1422,6 +1599,7 @@ export const people = [
     email: "tsnasdell4x@ucsd.edu",
     gender: "Male",
     date_of_birth: "13/07/2004",
+    salary: 15000,
   },
   {
     id: 179,
@@ -1430,6 +1608,7 @@ export const people = [
     email: "sbiggs4y@amazon.de",
     gender: "Male",
     date_of_birth: "09/07/2014",
+    salary: 15000,
   },
   {
     id: 180,
@@ -1438,6 +1617,7 @@ export const people = [
     email: "pbread4z@de.vu",
     gender: "Male",
     date_of_birth: "13/05/2022",
+    salary: 15000,
   },
   {
     id: 181,
@@ -1446,6 +1626,7 @@ export const people = [
     email: "kbeaumont50@mapquest.com",
     gender: "Female",
     date_of_birth: "01/10/2016",
+    salary: 15000,
   },
   {
     id: 182,
@@ -1454,6 +1635,7 @@ export const people = [
     email: "cpatroni51@hp.com",
     gender: "Female",
     date_of_birth: "02/05/2017",
+    salary: 15000,
   },
   {
     id: 183,
@@ -1462,6 +1644,7 @@ export const people = [
     email: "mclench52@time.com",
     gender: "Female",
     date_of_birth: "05/10/2009",
+    salary: 15000,
   },
   {
     id: 184,
@@ -1470,6 +1653,7 @@ export const people = [
     email: "uhughs53@wikimedia.org",
     gender: "Polygender",
     date_of_birth: "04/04/2007",
+    salary: 15000,
   },
   {
     id: 185,
@@ -1478,6 +1662,7 @@ export const people = [
     email: "apeacher54@nba.com",
     gender: "Female",
     date_of_birth: "11/02/2021",
+    salary: 15000,
   },
   {
     id: 186,
@@ -1486,6 +1671,7 @@ export const people = [
     email: "cbordone55@amazon.com",
     gender: "Female",
     date_of_birth: "01/01/2021",
+    salary: 15000,
   },
   {
     id: 187,
@@ -1494,6 +1680,7 @@ export const people = [
     email: "gbenfell56@forbes.com",
     gender: "Male",
     date_of_birth: "01/09/2009",
+    salary: 15000,
   },
   {
     id: 188,
@@ -1502,6 +1689,7 @@ export const people = [
     email: "ylouw57@macromedia.com",
     gender: "Polygender",
     date_of_birth: "27/02/2021",
+    salary: 15000,
   },
   {
     id: 189,
@@ -1510,6 +1698,7 @@ export const people = [
     email: "cbaal58@vk.com",
     gender: "Male",
     date_of_birth: "08/09/2019",
+    salary: 15000,
   },
   {
     id: 190,
@@ -1518,6 +1707,7 @@ export const people = [
     email: "bbritto59@nature.com",
     gender: "Male",
     date_of_birth: "12/01/2007",
+    salary: 15000,
   },
   {
     id: 191,
@@ -1526,6 +1716,7 @@ export const people = [
     email: "ghartil5a@mozilla.com",
     gender: "Female",
     date_of_birth: "17/11/2012",
+    salary: 15000,
   },
   {
     id: 192,
@@ -1534,6 +1725,7 @@ export const people = [
     email: "gmonery5b@github.io",
     gender: "Female",
     date_of_birth: "31/12/2010",
+    salary: 15000,
   },
   {
     id: 193,
@@ -1542,6 +1734,7 @@ export const people = [
     email: "jroostan5c@washington.edu",
     gender: "Female",
     date_of_birth: "23/12/2012",
+    salary: 15000,
   },
   {
     id: 194,
@@ -1550,6 +1743,7 @@ export const people = [
     email: "ktsarovic5d@xinhuanet.com",
     gender: "Female",
     date_of_birth: "02/03/2010",
+    salary: 15000,
   },
   {
     id: 195,
@@ -1558,6 +1752,7 @@ export const people = [
     email: "gbraven5e@lycos.com",
     gender: "Female",
     date_of_birth: "08/09/2014",
+    salary: 15000,
   },
   {
     id: 196,
@@ -1566,6 +1761,7 @@ export const people = [
     email: "dpackham5f@dot.gov",
     gender: "Male",
     date_of_birth: "02/12/2020",
+    salary: 15000,
   },
   {
     id: 197,
@@ -1574,6 +1770,7 @@ export const people = [
     email: "fbrugsma5g@com.com",
     gender: "Male",
     date_of_birth: "08/07/2001",
+    salary: 15000,
   },
   {
     id: 198,
@@ -1582,6 +1779,7 @@ export const people = [
     email: "kbirtley5h@slate.com",
     gender: "Male",
     date_of_birth: "21/05/2009",
+    salary: 15000,
   },
   {
     id: 199,
@@ -1590,6 +1788,7 @@ export const people = [
     email: "lweatherley5i@un.org",
     gender: "Female",
     date_of_birth: "26/10/2014",
+    salary: 15000,
   },
   {
     id: 200,
@@ -1598,6 +1797,7 @@ export const people = [
     email: "hsutcliffe5j@mit.edu",
     gender: "Male",
     date_of_birth: "26/08/2022",
+    salary: 15000,
   },
   {
     id: 201,
@@ -1606,6 +1806,7 @@ export const people = [
     email: "acheverton5k@dot.gov",
     gender: "Female",
     date_of_birth: "12/09/2003",
+    salary: 15000,
   },
   {
     id: 202,
@@ -1614,6 +1815,7 @@ export const people = [
     email: "rdrinkhill5l@disqus.com",
     gender: "Male",
     date_of_birth: "31/07/2016",
+    salary: 15000,
   },
   {
     id: 203,
@@ -1622,6 +1824,7 @@ export const people = [
     email: "mhammerich5m@eepurl.com",
     gender: "Female",
     date_of_birth: "13/09/2000",
+    salary: 15000,
   },
   {
     id: 204,
@@ -1630,6 +1833,7 @@ export const people = [
     email: "bfidgeon5n@amazonaws.com",
     gender: "Male",
     date_of_birth: "18/12/2023",
+    salary: 15000,
   },
   {
     id: 205,
@@ -1638,6 +1842,7 @@ export const people = [
     email: "vdursley5o@rakuten.co.jp",
     gender: "Female",
     date_of_birth: "04/04/2003",
+    salary: 15000,
   },
   {
     id: 206,
@@ -1646,6 +1851,7 @@ export const people = [
     email: "wfelgat5p@unblog.fr",
     gender: "Male",
     date_of_birth: "23/12/2002",
+    salary: 15000,
   },
   {
     id: 207,
@@ -1654,6 +1860,7 @@ export const people = [
     email: "gmcgurgan5q@canalblog.com",
     gender: "Female",
     date_of_birth: "09/01/2009",
+    salary: 15000,
   },
   {
     id: 208,
@@ -1662,6 +1869,7 @@ export const people = [
     email: "mbredbury5r@disqus.com",
     gender: "Male",
     date_of_birth: "16/09/2010",
+    salary: 15000,
   },
   {
     id: 209,
@@ -1670,6 +1878,7 @@ export const people = [
     email: "rfedorchenko5s@gravatar.com",
     gender: "Male",
     date_of_birth: "04/11/2016",
+    salary: 15000,
   },
   {
     id: 210,
@@ -1678,6 +1887,7 @@ export const people = [
     email: "afogg5t@amazon.de",
     gender: "Male",
     date_of_birth: "10/02/2004",
+    salary: 15000,
   },
   {
     id: 211,
@@ -1686,6 +1896,7 @@ export const people = [
     email: "nteideman5u@washington.edu",
     gender: "Female",
     date_of_birth: "28/10/2023",
+    salary: 15000,
   },
   {
     id: 212,
@@ -1694,6 +1905,7 @@ export const people = [
     email: "pminchenton5v@elpais.com",
     gender: "Male",
     date_of_birth: "08/06/2023",
+    salary: 15000,
   },
   {
     id: 213,
@@ -1702,6 +1914,7 @@ export const people = [
     email: "akennelly5w@issuu.com",
     gender: "Male",
     date_of_birth: "07/11/2019",
+    salary: 15000,
   },
   {
     id: 214,
@@ -1710,6 +1923,7 @@ export const people = [
     email: "mcust5x@is.gd",
     gender: "Female",
     date_of_birth: "10/06/2021",
+    salary: 15000,
   },
   {
     id: 215,
@@ -1718,6 +1932,7 @@ export const people = [
     email: "bbozworth5y@i2i.jp",
     gender: "Male",
     date_of_birth: "03/11/2023",
+    salary: 15000,
   },
   {
     id: 216,
@@ -1726,6 +1941,7 @@ export const people = [
     email: "irawkesby5z@npr.org",
     gender: "Female",
     date_of_birth: "08/05/2016",
+    salary: 15000,
   },
   {
     id: 217,
@@ -1734,6 +1950,7 @@ export const people = [
     email: "hkilmaster60@mozilla.com",
     gender: "Female",
     date_of_birth: "05/03/2005",
+    salary: 15000,
   },
   {
     id: 218,
@@ -1742,6 +1959,7 @@ export const people = [
     email: "ddoerffer61@deviantart.com",
     gender: "Female",
     date_of_birth: "27/10/2000",
+    salary: 15000,
   },
   {
     id: 219,
@@ -1750,6 +1968,7 @@ export const people = [
     email: "aweatherhead62@biglobe.ne.jp",
     gender: "Agender",
     date_of_birth: "08/06/2018",
+    salary: 15000,
   },
   {
     id: 220,
@@ -1758,6 +1977,7 @@ export const people = [
     email: "thumble63@dion.ne.jp",
     gender: "Female",
     date_of_birth: "18/02/2013",
+    salary: 15000,
   },
   {
     id: 221,
@@ -1766,6 +1986,7 @@ export const people = [
     email: "nyakhin64@sakura.ne.jp",
     gender: "Male",
     date_of_birth: "23/12/2023",
+    salary: 15000,
   },
   {
     id: 222,
@@ -1774,6 +1995,7 @@ export const people = [
     email: "carrault65@gmpg.org",
     gender: "Genderfluid",
     date_of_birth: "13/04/2011",
+    salary: 15000,
   },
   {
     id: 223,
@@ -1782,6 +2004,7 @@ export const people = [
     email: "bbecom66@eventbrite.com",
     gender: "Male",
     date_of_birth: "07/05/2012",
+    salary: 15000,
   },
   {
     id: 224,
@@ -1790,6 +2013,7 @@ export const people = [
     email: "rbouch67@blogspot.com",
     gender: "Male",
     date_of_birth: "04/04/2011",
+    salary: 15000,
   },
   {
     id: 225,
@@ -1798,6 +2022,7 @@ export const people = [
     email: "ljepp68@uol.com.br",
     gender: "Female",
     date_of_birth: "18/04/2007",
+    salary: 15000,
   },
   {
     id: 226,
@@ -1806,239 +2031,9 @@ export const people = [
     email: "cleverich69@google.ca",
     gender: "Female",
     date_of_birth: "08/08/2001",
+    salary: 15000,
   },
-  {
-    id: 227,
-    first_name: "Giff",
-    last_name: "Mardall",
-    email: "gmardall6a@narod.ru",
-    gender: "Male",
-    date_of_birth: "16/04/2017",
-  },
-  {
-    id: 228,
-    first_name: "Gael",
-    last_name: "Chastey",
-    email: "gchastey6b@blog.com",
-    gender: "Female",
-    date_of_birth: "13/08/2008",
-  },
-  {
-    id: 229,
-    first_name: "Phedra",
-    last_name: "Ciccoloi",
-    email: "pciccoloi6c@people.com.cn",
-    gender: "Female",
-    date_of_birth: "16/10/2005",
-  },
-  {
-    id: 230,
-    first_name: "Farrel",
-    last_name: "Dobkin",
-    email: "fdobkin6d@bravesites.com",
-    gender: "Male",
-    date_of_birth: "09/02/2017",
-  },
-  {
-    id: 231,
-    first_name: "Thaxter",
-    last_name: "Gerrett",
-    email: "tgerrett6e@bigcartel.com",
-    gender: "Male",
-    date_of_birth: "01/11/2001",
-  },
-  {
-    id: 232,
-    first_name: "Claire",
-    last_name: "Kahan",
-    email: "ckahan6f@prlog.org",
-    gender: "Male",
-    date_of_birth: "24/08/2001",
-  },
-  {
-    id: 233,
-    first_name: "Tonye",
-    last_name: "Cochet",
-    email: "tcochet6g@yale.edu",
-    gender: "Female",
-    date_of_birth: "27/04/2023",
-  },
-  {
-    id: 234,
-    first_name: "Jerry",
-    last_name: "Bunkle",
-    email: "jbunkle6h@tripadvisor.com",
-    gender: "Bigender",
-    date_of_birth: "09/11/2002",
-  },
-  {
-    id: 235,
-    first_name: "Vicky",
-    last_name: "Heineken",
-    email: "vheineken6i@infoseek.co.jp",
-    gender: "Female",
-    date_of_birth: "01/11/2005",
-  },
-  {
-    id: 236,
-    first_name: "Bowie",
-    last_name: "Rymell",
-    email: "brymell6j@cloudflare.com",
-    gender: "Male",
-    date_of_birth: "17/09/2007",
-  },
-  {
-    id: 237,
-    first_name: "Jock",
-    last_name: "Lingwood",
-    email: "jlingwood6k@indiegogo.com",
-    gender: "Male",
-    date_of_birth: "09/05/2001",
-  },
-  {
-    id: 238,
-    first_name: "Jacob",
-    last_name: "Danton",
-    email: "jdanton6l@storify.com",
-    gender: "Genderfluid",
-    date_of_birth: "15/11/2001",
-  },
-  {
-    id: 239,
-    first_name: "Heath",
-    last_name: "Bollin",
-    email: "hbollin6m@reverbnation.com",
-    gender: "Male",
-    date_of_birth: "17/10/2000",
-  },
-  {
-    id: 240,
-    first_name: "Filberte",
-    last_name: "Knowles",
-    email: "fknowles6n@issuu.com",
-    gender: "Male",
-    date_of_birth: "28/11/2008",
-  },
-  {
-    id: 241,
-    first_name: "Letty",
-    last_name: "Hugland",
-    email: "lhugland6o@technorati.com",
-    gender: "Female",
-    date_of_birth: "05/03/2019",
-  },
-  {
-    id: 242,
-    first_name: "Edie",
-    last_name: "Treweek",
-    email: "etreweek6p@europa.eu",
-    gender: "Female",
-    date_of_birth: "08/01/2012",
-  },
-  {
-    id: 243,
-    first_name: "Belvia",
-    last_name: "Agglio",
-    email: "bagglio6q@com.com",
-    gender: "Female",
-    date_of_birth: "05/11/2018",
-  },
-  {
-    id: 244,
-    first_name: "Maura",
-    last_name: "Snedden",
-    email: "msnedden6r@fc2.com",
-    gender: "Female",
-    date_of_birth: "31/12/2012",
-  },
-  {
-    id: 245,
-    first_name: "Micheil",
-    last_name: "Grahame",
-    email: "mgrahame6s@wikimedia.org",
-    gender: "Male",
-    date_of_birth: "22/05/2021",
-  },
-  {
-    id: 246,
-    first_name: "Courtney",
-    last_name: "Andres",
-    email: "candres6t@mayoclinic.com",
-    gender: "Male",
-    date_of_birth: "30/04/2020",
-  },
-  {
-    id: 247,
-    first_name: "Filbert",
-    last_name: "Pidgley",
-    email: "fpidgley6u@dell.com",
-    gender: "Male",
-    date_of_birth: "06/12/2021",
-  },
-  {
-    id: 248,
-    first_name: "Ailey",
-    last_name: "Rattery",
-    email: "arattery6v@plala.or.jp",
-    gender: "Polygender",
-    date_of_birth: "24/05/2004",
-  },
-  {
-    id: 249,
-    first_name: "Dora",
-    last_name: "Padley",
-    email: "dpadley6w@state.tx.us",
-    gender: "Female",
-    date_of_birth: "03/07/2021",
-  },
-  {
-    id: 250,
-    first_name: "Elisha",
-    last_name: "Gullam",
-    email: "egullam6x@i2i.jp",
-    gender: "Male",
-    date_of_birth: "30/10/2000",
-  },
-  {
-    id: 251,
-    first_name: "Kendra",
-    last_name: "Lathaye",
-    email: "klathaye6y@parallels.com",
-    gender: "Female",
-    date_of_birth: "10/04/2008",
-  },
-  {
-    id: 252,
-    first_name: "Algernon",
-    last_name: "Havik",
-    email: "ahavik6z@miitbeian.gov.cn",
-    gender: "Male",
-    date_of_birth: "08/02/2006",
-  },
-  {
-    id: 253,
-    first_name: "Catriona",
-    last_name: "Negri",
-    email: "cnegri70@nifty.com",
-    gender: "Female",
-    date_of_birth: "26/09/2018",
-  },
-  {
-    id: 254,
-    first_name: "Dniren",
-    last_name: "Sunnucks",
-    email: "dsunnucks71@ca.gov",
-    gender: "Female",
-    date_of_birth: "24/11/2004",
-  },
-  {
-    id: 255,
-    first_name: "Tammi",
-    last_name: "Beasant",
-    email: "tbeasant72@answers.com",
-    gender: "Female",
-    date_of_birth: "27/07/2005",
-  },
+
   {
     id: 256,
     first_name: "Alexandros",

@@ -12,11 +12,11 @@ function __FilterActions({
 }) {
   return (
     (<Button
-      className={cn('h-7 !px-2', !hasFilters && 'hidden')}
+      className={cn('h-7 rounded-lg !px-2', !hasFilters && 'hidden')}
       variant="destructive"
       onClick={actions?.removeAllFilters}>
       <FilterXIcon />
-      <span className="hidden md:block">{t('clear', locale)}</span>
+      <span className="hidden md:block text-xs">{t('clear', locale)}</span>
     </Button>)
   );
 }
