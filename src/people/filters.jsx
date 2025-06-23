@@ -48,20 +48,18 @@ export const columnsConfig = [
     .displayName("Gender")
     .icon(CircleDotDashedIcon)
     .options(
-      GENDER_STATUSES.map((gender) => {
-        return {
-          value: gender.id,
-          label: gender.name,
-          icon: gender.icon,
-        };
-      })
+      GENDER_STATUSES.map((gender) => ({
+        value: gender.id,
+        label: gender.name,
+        icon: gender.icon,
+      }))
     )
     .build(),
 
   dtf
     .number()
-    .accessor((row) => row.salary)
     .id("salary")
+    .accessor((row) => row.salary)
     .displayName("Salary")
     .icon(IconCashBanknote)
     .build(),
